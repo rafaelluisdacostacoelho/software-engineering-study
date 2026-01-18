@@ -1,5 +1,3 @@
-% Decorator — Padrão Estrutural
-
 [Anterior](Composite.md) | [Índice](../../SUMMARY.md) | [Próximo](Facade.md)
 
 # Decorator

@@ -1,5 +1,3 @@
-% Separation of Concerns — Separação de Responsabilidades (nível Sênior / Especialista)
-
 [Anterior](OCP.md) | [Índice](../../SUMMARY.md) | [Próximo](TellDontAsk.md)
 
 # Separation of Concerns

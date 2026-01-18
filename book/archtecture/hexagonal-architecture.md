@@ -1,5 +1,3 @@
-% Arquitetura Hexagonal (Ports & Adapters)
-
 [Anterior](../principles/YAGNI.md) | [Índice](../../SUMMARY.md) | [Próximo](onion-architecture.md)
 
 # Arquitetura Hexagonal (Ports & Adapters)

@@ -1,5 +1,3 @@
-% DRY — Don't Repeat Yourself (nível Sênior / Especialista)
-
 [Anterior](../introducao.md) | [Índice](../../SUMMARY.md) | [Próximo](KISS.md)
 
 # DRY — Don't Repeat Yourself

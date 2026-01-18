@@ -1,5 +1,3 @@
-% Concurrency and Parallelism — Fundamentos Avançados
-
 [Anterior](../complexity/code-quality-and-complexity-metrics.md) | [Índice](../../SUMMARY.md) | [Próximo](classic-concurrency-problems.md)
 
 # Concurrency and Parallelism

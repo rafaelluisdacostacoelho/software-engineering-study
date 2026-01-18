@@ -1,5 +1,3 @@
-% Bridge — Padrão Estrutural
-
 [Anterior](Adapter.md) | [Índice](../../SUMMARY.md) | [Próximo](Builder.md)
 
 # Bridge

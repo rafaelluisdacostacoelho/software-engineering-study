@@ -1,5 +1,3 @@
-% System Design Interview — Guia Prático para Candidatos e Entrevistadores
-
 [Anterior](../tests/unit-testing.md) | [Índice](../../SUMMARY.md) | [Próximo](code-review-collaboration.md)
 
 # System Design Interview — Guia Prático para Candidatos e Entrevistadores

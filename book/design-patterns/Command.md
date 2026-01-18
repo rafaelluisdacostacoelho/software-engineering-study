@@ -1,5 +1,3 @@
-% Command — Padrão de Ação (Behavioral)
-
 [Anterior](ChainOfResponsibility.md) | [Índice](../../SUMMARY.md) | [Próximo](Composite.md)
 
 # Command

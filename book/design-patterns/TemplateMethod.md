@@ -1,5 +1,3 @@
-% Template Method — Padrão Comportamental
-
 [Anterior](Strategy.md) | [Índice](../../SUMMARY.md) | [Próximo](Visitor.md)
 
 # Template Method

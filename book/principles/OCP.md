@@ -1,5 +1,3 @@
-% OCP — Open/Closed Principle e como evitar Overengineering (nível Sênior)
-
 [Anterior](SOLID.md) | [Índice](../../SUMMARY.md) | [Próximo](SeparationOfConcerns.md)
 
 # OCP

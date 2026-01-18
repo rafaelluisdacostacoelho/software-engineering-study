@@ -1,5 +1,3 @@
-% Chain of Responsibility — Padrão Comportamental
-
 [Anterior](Builder.md) | [Índice](../../SUMMARY.md) | [Próximo](Command.md)
 
 # Chain of Responsibility

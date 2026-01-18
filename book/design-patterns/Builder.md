@@ -1,5 +1,3 @@
-% Builder — Padrão de Criação
-
 [Anterior](Bridge.md) | [Índice](../../SUMMARY.md) | [Próximo](ChainOfResponsibility.md)
 
 # Builder

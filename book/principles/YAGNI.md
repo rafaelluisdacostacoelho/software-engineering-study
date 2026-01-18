@@ -1,5 +1,3 @@
-% YAGNI — You Aren't Gonna Need It (nível Sênior / Especialista)
-
 [Anterior](FailFast.md) | [Índice](../../SUMMARY.md) | [Próximo](../archtecture/hexagonal-architecture.md)
 
 # YAGNI

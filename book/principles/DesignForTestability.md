@@ -1,5 +1,3 @@
-% Design for Testability — Projeto para Testabilidade (nível Sênior / Especialista)
-
 [Anterior](CompositionOverInheritance.md) | [Índice](../../SUMMARY.md) | [Próximo](FailFast.md)
 
 # Design for Testability

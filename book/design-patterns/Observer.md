@@ -1,5 +1,3 @@
-% Observer — Padrão de Comportamento
-
 [Anterior](Factory.md) | [Índice](../../SUMMARY.md) | [Próximo](Proxy.md)
 
 # Observer

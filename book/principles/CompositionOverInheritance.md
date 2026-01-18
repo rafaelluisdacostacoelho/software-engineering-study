@@ -1,5 +1,3 @@
-% Composition over Inheritance — Composição em vez de Herança (nível Sênior / Especialista)
-
 [Anterior](LawOfDemeter.md) | [Índice](../../SUMMARY.md) | [Próximo](DesignForTestability.md)
 
 # Composition over Inheritance

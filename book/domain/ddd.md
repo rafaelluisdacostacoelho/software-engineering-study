@@ -1,5 +1,3 @@
-% Domain-Driven Design (DDD) — Guia Avançado para Desenvolvedores Experientes
-
 [Anterior](../archtecture/onion-architecture.md) | [Índice](../../SUMMARY.md) | [Próximo](../design-patterns/Adapter.md)
 
 # Domain-Driven Design (DDD) — Guia Avançado para Desenvolvedores Experientes

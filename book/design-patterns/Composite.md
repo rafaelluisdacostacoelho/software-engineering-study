@@ -1,5 +1,3 @@
-% Composite — Padrão Estrutural
-
 [Anterior](Command.md) | [Índice](../../SUMMARY.md) | [Próximo](Decorator.md)
 
 # Composite

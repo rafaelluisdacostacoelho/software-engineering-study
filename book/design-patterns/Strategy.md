@@ -1,5 +1,3 @@
-% Strategy — Padrão de Comportamento
-
 [Anterior](State.md) | [Índice](../../SUMMARY.md) | [Próximo](TemplateMethod.md)
 
 # Strategy

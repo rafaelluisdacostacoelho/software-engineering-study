@@ -1,5 +1,3 @@
-% State — Padrão Comportamental
-
 [Anterior](Singleton.md) | [Índice](../../SUMMARY.md) | [Próximo](Strategy.md)
 
 # State

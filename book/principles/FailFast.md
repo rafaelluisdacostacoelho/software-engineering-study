@@ -1,5 +1,3 @@
-% Fail Fast — Detectar e falhar cedo (nível Sênior / Especialista)
-
 [Anterior](DesignForTestability.md) | [Índice](../../SUMMARY.md) | [Próximo](YAGNI.md)
 
 # Fail Fast

@@ -1,5 +1,3 @@
-% Law of Demeter — Principle of Least Knowledge (nível Sênior / Especialista)
-
 [Anterior](TellDontAsk.md) | [Índice](../../SUMMARY.md) | [Próximo](CompositionOverInheritance.md)
 
 # Law of Demeter

@@ -1,5 +1,3 @@
-% Adapter — Padrão Estrutural
-
 [Anterior](../domain/ddd.md) | [Índice](../../SUMMARY.md) | [Próximo](Bridge.md)
 
 # Adapter

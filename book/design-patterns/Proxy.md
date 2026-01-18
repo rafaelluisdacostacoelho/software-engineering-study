@@ -1,5 +1,3 @@
-% Proxy — Padrão Estrutural
-
 [Anterior](Observer.md) | [Índice](../../SUMMARY.md) | [Próximo](Singleton.md)
 
 # Proxy

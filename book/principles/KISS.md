@@ -1,5 +1,3 @@
-% KISS — Keep It Simple, Stupid (nível Sênior / Especialista)
-
 [Anterior](DRY.md) | [Índice](../../SUMMARY.md) | [Próximo](SOLID.md)
 
 # KISS

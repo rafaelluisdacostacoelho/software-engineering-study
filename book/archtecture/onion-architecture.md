@@ -1,5 +1,3 @@
-% Onion Architecture — Arquitetura em Cebola (nível Sênior / Especialista)
-
 [Anterior](hexagonal-architecture.md) | [Índice](../../SUMMARY.md) | [Próximo](../domain/ddd.md)
 
 # Onion Architecture — Arquitetura em Cebola (nível Sênior / Especialista)

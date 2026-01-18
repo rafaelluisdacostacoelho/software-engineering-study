@@ -1,5 +1,3 @@
-% Singleton — Padrão de Projeto
-
 [Anterior](Proxy.md) | [Índice](../../SUMMARY.md) | [Próximo](State.md)
 
 # Singleton

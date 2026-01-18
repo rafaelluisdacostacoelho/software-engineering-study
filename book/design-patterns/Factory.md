@@ -1,5 +1,3 @@
-% Factory — Padrão de Criação (Factory / Factory Method / Abstract Factory)
-
 [Anterior](Facade.md) | [Índice](../../SUMMARY.md) | [Próximo](Observer.md)
 
 # Factory

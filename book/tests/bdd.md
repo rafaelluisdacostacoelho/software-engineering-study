@@ -1,5 +1,3 @@
-% Behavior-Driven Development (BDD) — Guia Avançado para Especialistas
-
 [Anterior](tdd.md) | [Índice](../../SUMMARY.md) | [Próximo](unit-testing.md)
 
 # Behavior-Driven Development (BDD) — Guia Avançado para Especialistas

@@ -1,5 +1,3 @@
-% Visitor — Padrão Comportamental
-
 [Anterior](TemplateMethod.md) | [Índice](../../SUMMARY.md) | [Próximo](../complexity/data-structures-and-big-o.md)
 
 # Visitor

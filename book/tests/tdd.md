@@ -1,5 +1,3 @@
-% Test-Driven Development (TDD) — Guia Avançado para Profissionais
-
 [Anterior](../mission-critical/high-availability-fault-tolerance.md) | [Índice](../../SUMMARY.md) | [Próximo](bdd.md)
 
 # Test-Driven Development (TDD) — Guia Avançado para Profissionais

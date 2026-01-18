@@ -1,5 +1,3 @@
-% Tell, Don't Ask — Princípio de Design (nível Sênior / Especialista)
-
 [Anterior](SeparationOfConcerns.md) | [Índice](../../SUMMARY.md) | [Próximo](LawOfDemeter.md)
 
 # Tell, Don't Ask

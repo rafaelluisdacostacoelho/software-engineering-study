@@ -1,5 +1,3 @@
-% Facade — Padrão Estrutural
-
 [Anterior](Decorator.md) | [Índice](../../SUMMARY.md) | [Próximo](Factory.md)
 
 # Facade
