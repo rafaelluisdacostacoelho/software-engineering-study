@@ -286,4 +286,13 @@ Versione a mensagem (ou suporte backward compatibility), implemente migrations g
 
 ---
 
+## Referências e Práticas do Mercado
+
+- ThoughtWorks Tech Radar (práticas e tendências em engenharia)
+- Martin Fowler (refactoring, arquitetura evolutiva, patterns)
+- Google SRE Book / SRE Workbook (operações e confiabilidade)
+
+---
+
+
 [Anterior](ChainOfResponsibility.md) | [Índice](../../SUMMARY.md) | [Próximo](Composite.md)

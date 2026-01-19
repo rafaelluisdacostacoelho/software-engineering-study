@@ -243,4 +243,13 @@ Tente reduzir a interface comum ao mínimo e, se necessário, use double-dispatc
 
 ---
 
+## Referências e Práticas do Mercado
+
+- ThoughtWorks Tech Radar (práticas e tendências em engenharia)
+- Martin Fowler (refactoring, arquitetura evolutiva, patterns)
+- Google SRE Book / SRE Workbook (operações e confiabilidade)
+
+---
+
+
 [Anterior](Command.md) | [Índice](../../SUMMARY.md) | [Próximo](Decorator.md)

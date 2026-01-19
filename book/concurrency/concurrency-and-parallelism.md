@@ -192,4 +192,13 @@ Reduza estado compartilhado, use invariantes claras, adicione timeouts, e tenha 
 
 ---
 
+## Referências e Práticas do Mercado
+
+- ThoughtWorks Tech Radar (práticas e tendências em engenharia)
+- Martin Fowler (refactoring, arquitetura evolutiva, patterns)
+- Google SRE Book / SRE Workbook (operações e confiabilidade)
+
+---
+
+
 [Anterior](../complexity/code-quality-and-complexity-metrics.md) | [Índice](../../SUMMARY.md) | [Próximo](classic-concurrency-problems.md)

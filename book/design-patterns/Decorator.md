@@ -241,4 +241,13 @@ Limite profundidade, componha via configuração explícita, e mantenha tracing/
 
 ---
 
+## Referências e Práticas do Mercado
+
+- ThoughtWorks Tech Radar (práticas e tendências em engenharia)
+- Martin Fowler (refactoring, arquitetura evolutiva, patterns)
+- Google SRE Book / SRE Workbook (operações e confiabilidade)
+
+---
+
+
 [Anterior](Composite.md) | [Índice](../../SUMMARY.md) | [Próximo](Facade.md)

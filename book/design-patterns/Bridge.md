@@ -178,4 +178,13 @@ Sim. Adapter integra um SDK específico; Bridge permite trocar implementadores/p
 
 ---
 
+## Referências e Práticas do Mercado
+
+- ThoughtWorks Tech Radar (práticas e tendências em engenharia)
+- Martin Fowler (refactoring, arquitetura evolutiva, patterns)
+- Google SRE Book / SRE Workbook (operações e confiabilidade)
+
+---
+
+
 [Anterior](Adapter.md) | [Índice](../../SUMMARY.md) | [Próximo](Builder.md)

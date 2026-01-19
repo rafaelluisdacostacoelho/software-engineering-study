@@ -228,4 +228,13 @@ Quando você precisa forçar obrigatoriedade/ordem de campos e quer isso garanti
 
 ---
 
+## Referências e Práticas do Mercado
+
+- ThoughtWorks Tech Radar (práticas e tendências em engenharia)
+- Martin Fowler (refactoring, arquitetura evolutiva, patterns)
+- Google SRE Book / SRE Workbook (operações e confiabilidade)
+
+---
+
+
 [Anterior](Bridge.md) | [Índice](../../SUMMARY.md) | [Próximo](ChainOfResponsibility.md)

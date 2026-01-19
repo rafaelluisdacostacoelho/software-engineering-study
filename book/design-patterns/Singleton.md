@@ -183,4 +183,13 @@ Não. Você terá um por réplica/pod. Exclusividade global exige coordenação 
 
 ---
 
+## Referências e Práticas do Mercado
+
+- ThoughtWorks Tech Radar (práticas e tendências em engenharia)
+- Martin Fowler (refactoring, arquitetura evolutiva, patterns)
+- Google SRE Book / SRE Workbook (operações e confiabilidade)
+
+---
+
+
 [Anterior](Proxy.md) | [Índice](../../SUMMARY.md) | [Próximo](State.md)

@@ -206,4 +206,13 @@ Mantenha regras de negócio no domínio; a facade deve orquestrar e adaptar. Se 
 
 ---
 
+## Referências e Práticas do Mercado
+
+- ThoughtWorks Tech Radar (práticas e tendências em engenharia)
+- Martin Fowler (refactoring, arquitetura evolutiva, patterns)
+- Google SRE Book / SRE Workbook (operações e confiabilidade)
+
+---
+
+
 [Anterior](Decorator.md) | [Índice](../../SUMMARY.md) | [Próximo](Factory.md)

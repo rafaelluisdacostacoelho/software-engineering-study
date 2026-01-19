@@ -224,4 +224,13 @@ Use registry tipado, módulos por provider, e testes de contrato por implementa�
 
 ---
 
+## Referências e Práticas do Mercado
+
+- ThoughtWorks Tech Radar (práticas e tendências em engenharia)
+- Martin Fowler (refactoring, arquitetura evolutiva, patterns)
+- Google SRE Book / SRE Workbook (operações e confiabilidade)
+
+---
+
+
 [Anterior](Facade.md) | [Índice](../../SUMMARY.md) | [Próximo](Observer.md)

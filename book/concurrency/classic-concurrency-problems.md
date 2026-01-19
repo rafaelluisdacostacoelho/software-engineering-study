@@ -195,4 +195,13 @@ Não. É comum em DB e APIs. Use transações, locks, ou controle otimista com v
 
 ---
 
+## Referências e Práticas do Mercado
+
+- ThoughtWorks Tech Radar (práticas e tendências em engenharia)
+- Martin Fowler (refactoring, arquitetura evolutiva, patterns)
+- Google SRE Book / SRE Workbook (operações e confiabilidade)
+
+---
+
+
 [Anterior](concurrency-and-parallelism.md) | [Índice](../../SUMMARY.md) | [Próximo](../critical-operations/transactions-acid.md)

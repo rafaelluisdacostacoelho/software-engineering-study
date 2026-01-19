@@ -250,4 +250,13 @@ Versione estados, migre dados e mantenha transições compatíveis. Para workflo
 
 ---
 
+## Referências e Práticas do Mercado
+
+- ThoughtWorks Tech Radar (práticas e tendências em engenharia)
+- Martin Fowler (refactoring, arquitetura evolutiva, patterns)
+- Google SRE Book / SRE Workbook (operações e confiabilidade)
+
+---
+
+
 [Anterior](Singleton.md) | [Índice](../../SUMMARY.md) | [Próximo](Strategy.md)

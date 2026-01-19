@@ -194,4 +194,13 @@ Refatoração incremental: extração de funções, reduzir nesting, criar abstr
 
 ---
 
+## Referências e Práticas do Mercado
+
+- ThoughtWorks Tech Radar (práticas e tendências em engenharia)
+- Martin Fowler (refactoring, arquitetura evolutiva, patterns)
+- Google SRE Book / SRE Workbook (operações e confiabilidade)
+
+---
+
+
 [Anterior](data-structures-and-big-o.md) | [Índice](../../SUMMARY.md) | [Próximo](../concurrency/concurrency-and-parallelism.md)

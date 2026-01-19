@@ -218,4 +218,13 @@ Use locks por chave, singleflight, ou caches que suportam “request coalescing�
 
 ---
 
+## Referências e Práticas do Mercado
+
+- ThoughtWorks Tech Radar (práticas e tendências em engenharia)
+- Martin Fowler (refactoring, arquitetura evolutiva, patterns)
+- Google SRE Book / SRE Workbook (operações e confiabilidade)
+
+---
+
+
 [Anterior](Observer.md) | [Índice](../../SUMMARY.md) | [Próximo](Singleton.md)

@@ -217,4 +217,13 @@ Defina uma porta estável, implemente dois adapters, faça shadow/canary, compar
 
 ---
 
+## Referências e Práticas do Mercado
+
+- ThoughtWorks Tech Radar (práticas e tendências em engenharia)
+- Martin Fowler (refactoring, arquitetura evolutiva, patterns)
+- Google SRE Book / SRE Workbook (operações e confiabilidade)
+
+---
+
+
 [Anterior](../domain/ddd.md) | [Índice](../../SUMMARY.md) | [Próximo](Bridge.md)

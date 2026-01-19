@@ -228,4 +228,13 @@ Evite colocar dependências críticas em handlers síncronos; use event bus para
 
 ---
 
+## Referências e Práticas do Mercado
+
+- ThoughtWorks Tech Radar (práticas e tendências em engenharia)
+- Martin Fowler (refactoring, arquitetura evolutiva, patterns)
+- Google SRE Book / SRE Workbook (operações e confiabilidade)
+
+---
+
+
 [Anterior](Factory.md) | [Índice](../../SUMMARY.md) | [Próximo](Proxy.md)

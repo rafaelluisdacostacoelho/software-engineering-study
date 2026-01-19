@@ -181,4 +181,13 @@ Para lookup frequente, normalmente sim. Mas se o conjunto é pequeno e a operaç
 
 ---
 
+## Referências e Práticas do Mercado
+
+- ThoughtWorks Tech Radar (práticas e tendências em engenharia)
+- Martin Fowler (refactoring, arquitetura evolutiva, patterns)
+- Google SRE Book / SRE Workbook (operações e confiabilidade)
+
+---
+
+
 [Anterior](../design-patterns/Visitor.md) | [Índice](../../SUMMARY.md) | [Próximo](code-quality-and-complexity-metrics.md)
