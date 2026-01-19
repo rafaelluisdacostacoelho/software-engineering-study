@@ -1,4 +1,4 @@
-[Anterior](DesignForTestability.md) | [Índice](../../SUMMARY.md) | [Próximo](YAGNI.md)
+[Anterior](design-for-testability.md) | [Índice](../../SUMMARY.md) | [Próximo](yagni.md)
 
 # Fail Fast — Falhar Cedo, Falhar Claro (Princípio Operacional)
 
@@ -162,4 +162,4 @@ Retries seletivos, backoff+jitter, budgets e circuit breaker.
 ---
 
 
-[Anterior](DesignForTestability.md) | [Índice](../../SUMMARY.md) | [Próximo](YAGNI.md)
+[Anterior](design-for-testability.md) | [Índice](../../SUMMARY.md) | [Próximo](yagni.md)

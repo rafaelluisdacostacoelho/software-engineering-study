@@ -1,4 +1,4 @@
-[Anterior](TellDontAsk.md) | [Índice](../../SUMMARY.md) | [Próximo](CompositionOverInheritance.md)
+[Anterior](tell-dont-ask.md) | [Índice](../../SUMMARY.md) | [Próximo](composition-over-inheritance.md)
 
 # Law of Demeter — Menos Conhecimento, Menos Acoplamento (Princípio)
 
@@ -167,4 +167,4 @@ Exponha operações coesas (intenção). Se o método só repassa um getter sem 
 ---
 
 
-[Anterior](TellDontAsk.md) | [Índice](../../SUMMARY.md) | [Próximo](CompositionOverInheritance.md)
+[Anterior](tell-dont-ask.md) | [Índice](../../SUMMARY.md) | [Próximo](composition-over-inheritance.md)

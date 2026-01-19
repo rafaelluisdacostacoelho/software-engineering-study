@@ -1,4 +1,4 @@
-[Anterior](Adapter.md) | [Índice](../../SUMMARY.md) | [Próximo](Builder.md)
+[Anterior](adapter.md) | [Índice](../../SUMMARY.md) | [Próximo](builder.md)
 
 # Bridge — Separar Abstração de Implementação (Padrão Estrutural)
 
@@ -187,4 +187,4 @@ Sim. Adapter integra um SDK específico; Bridge permite trocar implementadores/p
 ---
 
 
-[Anterior](Adapter.md) | [Índice](../../SUMMARY.md) | [Próximo](Builder.md)
+[Anterior](adapter.md) | [Índice](../../SUMMARY.md) | [Próximo](builder.md)

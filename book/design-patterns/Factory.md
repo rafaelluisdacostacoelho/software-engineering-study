@@ -1,4 +1,4 @@
-[Anterior](Facade.md) | [Índice](../../SUMMARY.md) | [Próximo](Observer.md)
+[Anterior](facade.md) | [Índice](../../SUMMARY.md) | [Próximo](observer.md)
 
 # Factory — Centralizar Criação e Selecionar Implementações (Padrão de Criação)
 
@@ -233,4 +233,4 @@ Use registry tipado, módulos por provider, e testes de contrato por implementa�
 ---
 
 
-[Anterior](Facade.md) | [Índice](../../SUMMARY.md) | [Próximo](Observer.md)
+[Anterior](facade.md) | [Índice](../../SUMMARY.md) | [Próximo](observer.md)

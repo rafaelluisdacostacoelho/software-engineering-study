@@ -1,4 +1,4 @@
-[Anterior](DRY.md) | [Índice](../../SUMMARY.md) | [Próximo](SOLID.md)
+[Anterior](dry.md) | [Índice](../../SUMMARY.md) | [Próximo](solid.md)
 
 # KISS — Keep It Simple, Stupid (Simplicidade como Estratégia) (Princípio)
 
@@ -171,4 +171,4 @@ Pelo custo de entender, testar, operar e mudar. Faça a escolha que minimiza o c
 ---
 
 
-[Anterior](DRY.md) | [Índice](../../SUMMARY.md) | [Próximo](SOLID.md)
+[Anterior](dry.md) | [Índice](../../SUMMARY.md) | [Próximo](solid.md)

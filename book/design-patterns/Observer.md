@@ -1,4 +1,4 @@
-[Anterior](Factory.md) | [Índice](../../SUMMARY.md) | [Próximo](Proxy.md)
+[Anterior](factory.md) | [Índice](../../SUMMARY.md) | [Próximo](proxy.md)
 
 # Observer — Pub/Sub In-Process para Mudanças de Estado (Padrão Comportamental)
 
@@ -237,4 +237,4 @@ Evite colocar dependências críticas em handlers síncronos; use event bus para
 ---
 
 
-[Anterior](Factory.md) | [Índice](../../SUMMARY.md) | [Próximo](Proxy.md)
+[Anterior](factory.md) | [Índice](../../SUMMARY.md) | [Próximo](proxy.md)

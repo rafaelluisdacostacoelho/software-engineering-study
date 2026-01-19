@@ -1,4 +1,4 @@
-[Anterior](../principles/YAGNI.md) | [Índice](../../SUMMARY.md) | [Próximo](onion-architecture.md)
+[Anterior](../principles/yagni.md) | [Índice](../../SUMMARY.md) | [Próximo](onion-architecture.md)
 
 # Arquitetura Hexagonal (Ports & Adapters)
 
@@ -265,4 +265,4 @@ Tudo que é volátil e externo ao domínio: persistência, mensageria, gateways,
 
 ---
 
-[Anterior](../principles/YAGNI.md) | [Índice](../../SUMMARY.md) | [Próximo](onion-architecture.md)
+[Anterior](../principles/yagni.md) | [Índice](../../SUMMARY.md) | [Próximo](onion-architecture.md)

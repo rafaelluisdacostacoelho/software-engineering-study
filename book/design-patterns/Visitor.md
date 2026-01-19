@@ -1,4 +1,4 @@
-[Anterior](TemplateMethod.md) | [Índice](../../SUMMARY.md) | [Próximo](../complexity/data-structures-and-big-o.md)
+[Anterior](template-method.md) | [Índice](../../SUMMARY.md) | [Próximo](../complexity/data-structures-and-big-o.md)
 
 # Visitor — Adicionar Operações sem Alterar a Estrutura (Double Dispatch) (Padrão Comportamental)
 
@@ -239,4 +239,4 @@ Muitas vezes `singledispatch` ou pattern matching (quando disponível) dá um re
 ---
 
 
-[Anterior](TemplateMethod.md) | [Índice](../../SUMMARY.md) | [Próximo](../complexity/data-structures-and-big-o.md)
+[Anterior](template-method.md) | [Índice](../../SUMMARY.md) | [Próximo](../complexity/data-structures-and-big-o.md)

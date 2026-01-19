@@ -1,4 +1,4 @@
-[Anterior](Decorator.md) | [Índice](../../SUMMARY.md) | [Próximo](Factory.md)
+[Anterior](decorator.md) | [Índice](../../SUMMARY.md) | [Próximo](factory.md)
 
 # Facade — Interface Simples para Subsistemas Complexos (Padrão Estrutural)
 
@@ -215,4 +215,4 @@ Mantenha regras de negócio no domínio; a facade deve orquestrar e adaptar. Se 
 ---
 
 
-[Anterior](Decorator.md) | [Índice](../../SUMMARY.md) | [Próximo](Factory.md)
+[Anterior](decorator.md) | [Índice](../../SUMMARY.md) | [Próximo](factory.md)

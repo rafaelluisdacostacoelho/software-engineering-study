@@ -1,4 +1,4 @@
-[Anterior](../introducao.md) | [Índice](../../SUMMARY.md) | [Próximo](KISS.md)
+[Anterior](../introduction.md) | [Índice](../../SUMMARY.md) | [Próximo](kiss.md)
 
 # DRY — Don't Repeat Yourself
 
@@ -264,4 +264,4 @@ Mudanças de requisito que exigem editar muitos lugares e ainda assim geram regr
 
 ---
 
-[Anterior](../introducao.md) | [Índice](../../SUMMARY.md) | [Próximo](KISS.md)
+[Anterior](../introduction.md) | [Índice](../../SUMMARY.md) | [Próximo](kiss.md)

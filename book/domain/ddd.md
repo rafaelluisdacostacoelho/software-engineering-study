@@ -1,4 +1,4 @@
-[Anterior](../archtecture/onion-architecture.md) | [Índice](../../SUMMARY.md) | [Próximo](../design-patterns/Adapter.md)
+[Anterior](../archtecture/onion-architecture.md) | [Índice](../../SUMMARY.md) | [Próximo](../design-patterns/adapter.md)
 
 # Domain-Driven Design (DDD) — Guia Avançado para Desenvolvedores Experientes
 
@@ -286,4 +286,4 @@ Pequenos. Agregados grandes costumam gerar lock/contenda e dificultar escalabili
 
 ---
 
-[Anterior](../archtecture/onion-architecture.md) | [Índice](../../SUMMARY.md) | [Próximo](../design-patterns/Adapter.md)
+[Anterior](../archtecture/onion-architecture.md) | [Índice](../../SUMMARY.md) | [Próximo](../design-patterns/adapter.md)

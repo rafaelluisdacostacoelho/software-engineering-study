@@ -1,4 +1,4 @@
-[Anterior](ChainOfResponsibility.md) | [Índice](../../SUMMARY.md) | [Próximo](Composite.md)
+[Anterior](chain-of-responsibility.md) | [Índice](../../SUMMARY.md) | [Próximo](composite.md)
 
 # Command — Encapsular Ações como Objetos (Padrão Comportamental)
 
@@ -295,4 +295,4 @@ Versione a mensagem (ou suporte backward compatibility), implemente migrations g
 ---
 
 
-[Anterior](ChainOfResponsibility.md) | [Índice](../../SUMMARY.md) | [Próximo](Composite.md)
+[Anterior](chain-of-responsibility.md) | [Índice](../../SUMMARY.md) | [Próximo](composite.md)

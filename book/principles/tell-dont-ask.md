@@ -1,4 +1,4 @@
-[Anterior](SeparationOfConcerns.md) | [Índice](../../SUMMARY.md) | [Próximo](LawOfDemeter.md)
+[Anterior](separation-of-concerns.md) | [Índice](../../SUMMARY.md) | [Próximo](law-of-demeter.md)
 
 # Tell, Don’t Ask — Peça Ações, Não Estado (Princípio)
 
@@ -167,4 +167,4 @@ Mantenha a regra perto do dado (funções coesas por módulo) e evite “regrinh
 ---
 
 
-[Anterior](SeparationOfConcerns.md) | [Índice](../../SUMMARY.md) | [Próximo](LawOfDemeter.md)
+[Anterior](separation-of-concerns.md) | [Índice](../../SUMMARY.md) | [Próximo](law-of-demeter.md)

@@ -1,4 +1,4 @@
-[Anterior](SOLID.md) | [Índice](../../SUMMARY.md) | [Próximo](SeparationOfConcerns.md)
+[Anterior](solid.md) | [Índice](../../SUMMARY.md) | [Próximo](separation-of-concerns.md)
 
 # OCP — Open/Closed Principle (Aberto para Extensão, Fechado para Modificação) (Princípio)
 
@@ -182,4 +182,4 @@ Abra pontos de extensão depois que a variação se provar real (ou quando o ris
 ---
 
 
-[Anterior](SOLID.md) | [Índice](../../SUMMARY.md) | [Próximo](SeparationOfConcerns.md)
+[Anterior](solid.md) | [Índice](../../SUMMARY.md) | [Próximo](separation-of-concerns.md)

@@ -1,4 +1,4 @@
-[Anterior](../domain/ddd.md) | [Índice](../../SUMMARY.md) | [Próximo](Bridge.md)
+[Anterior](../domain/ddd.md) | [Índice](../../SUMMARY.md) | [Próximo](bridge.md)
 
 # Adapter — Integração Sem Acoplamento (Padrão Estrutural)
 
@@ -226,4 +226,4 @@ Defina uma porta estável, implemente dois adapters, faça shadow/canary, compar
 ---
 
 
-[Anterior](../domain/ddd.md) | [Índice](../../SUMMARY.md) | [Próximo](Bridge.md)
+[Anterior](../domain/ddd.md) | [Índice](../../SUMMARY.md) | [Próximo](bridge.md)

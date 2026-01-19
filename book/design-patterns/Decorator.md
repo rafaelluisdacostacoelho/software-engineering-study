@@ -1,4 +1,4 @@
-[Anterior](Composite.md) | [Índice](../../SUMMARY.md) | [Próximo](Facade.md)
+[Anterior](composite.md) | [Índice](../../SUMMARY.md) | [Próximo](facade.md)
 
 # Decorator — Adicionar Responsabilidades Sem Explodir Herança (Padrão Estrutural)
 
@@ -250,4 +250,4 @@ Limite profundidade, componha via configuração explícita, e mantenha tracing/
 ---
 
 
-[Anterior](Composite.md) | [Índice](../../SUMMARY.md) | [Próximo](Facade.md)
+[Anterior](composite.md) | [Índice](../../SUMMARY.md) | [Próximo](facade.md)

@@ -1,4 +1,4 @@
-[Anterior](Builder.md) | [Índice](../../SUMMARY.md) | [Próximo](Command.md)
+[Anterior](builder.md) | [Índice](../../SUMMARY.md) | [Próximo](command.md)
 
 # Chain of Responsibility — Encadear Handlers (Padrão Comportamental)
 
@@ -219,4 +219,4 @@ Agrupe por responsabilidade, remova etapas redundantes e meça latência por han
 ---
 
 
-[Anterior](Builder.md) | [Índice](../../SUMMARY.md) | [Próximo](Command.md)
+[Anterior](builder.md) | [Índice](../../SUMMARY.md) | [Próximo](command.md)

@@ -1,4 +1,4 @@
-[Anterior](FailFast.md) | [Índice](../../SUMMARY.md) | [Próximo](../archtecture/hexagonal-architecture.md)
+[Anterior](fail-fast.md) | [Índice](../../SUMMARY.md) | [Próximo](../archtecture/hexagonal-architecture.md)
 
 # YAGNI — You Aren’t Gonna Need It (Evite Construir o que Não É Necessário) (Princípio)
 
@@ -153,4 +153,4 @@ Quando o custo de mudança futura é altíssimo e previsível (ex.: compliance, 
 ---
 
 
-[Anterior](FailFast.md) | [Índice](../../SUMMARY.md) | [Próximo](../archtecture/hexagonal-architecture.md)
+[Anterior](fail-fast.md) | [Índice](../../SUMMARY.md) | [Próximo](../archtecture/hexagonal-architecture.md)

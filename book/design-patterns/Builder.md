@@ -1,4 +1,4 @@
-[Anterior](Bridge.md) | [Índice](../../SUMMARY.md) | [Próximo](ChainOfResponsibility.md)
+[Anterior](bridge.md) | [Índice](../../SUMMARY.md) | [Próximo](chain-of-responsibility.md)
 
 # Builder — Construção Passo a Passo de Objetos Complexos (Padrão de Criação)
 
@@ -237,4 +237,4 @@ Quando você precisa forçar obrigatoriedade/ordem de campos e quer isso garanti
 ---
 
 
-[Anterior](Bridge.md) | [Índice](../../SUMMARY.md) | [Próximo](ChainOfResponsibility.md)
+[Anterior](bridge.md) | [Índice](../../SUMMARY.md) | [Próximo](chain-of-responsibility.md)

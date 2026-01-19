@@ -1,4 +1,4 @@
-[Anterior](State.md) | [Índice](../../SUMMARY.md) | [Próximo](TemplateMethod.md)
+[Anterior](state.md) | [Índice](../../SUMMARY.md) | [Próximo](template-method.md)
 
 # Strategy — Algoritmos Intercambiáveis por Composição (Padrão Comportamental)
 
@@ -239,4 +239,4 @@ Sim, se a seleção for confusa. Centralize seleção e torne o critério explí
 ---
 
 
-[Anterior](State.md) | [Índice](../../SUMMARY.md) | [Próximo](TemplateMethod.md)
+[Anterior](state.md) | [Índice](../../SUMMARY.md) | [Próximo](template-method.md)

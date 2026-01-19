@@ -1,4 +1,4 @@
-[Anterior](OCP.md) | [Índice](../../SUMMARY.md) | [Próximo](TellDontAsk.md)
+[Anterior](ocp.md) | [Índice](../../SUMMARY.md) | [Próximo](tell-dont-ask.md)
 
 # Separation of Concerns — Separar Responsabilidades para Evoluir com Segurança (Princípio)
 
@@ -184,4 +184,4 @@ Quando a separação cria atrito (mapeamentos e camadas demais) sem reduzir risc
 ---
 
 
-[Anterior](OCP.md) | [Índice](../../SUMMARY.md) | [Próximo](TellDontAsk.md)
+[Anterior](ocp.md) | [Índice](../../SUMMARY.md) | [Próximo](tell-dont-ask.md)

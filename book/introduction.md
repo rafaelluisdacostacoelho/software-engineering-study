@@ -1,4 +1,4 @@
-[Índice](../SUMMARY.md) | [Próximo](principles/DRY.md)
+[Índice](../SUMMARY.md) | [Próximo](principles/dry.md)
 
 # Introdução
 
@@ -166,4 +166,4 @@ Use como checklist em PR e referência em design docs e incident reviews.
 ---
 
 
-[Índice](../SUMMARY.md) | [Próximo](principles/DRY.md)
+[Índice](../SUMMARY.md) | [Próximo](principles/dry.md)

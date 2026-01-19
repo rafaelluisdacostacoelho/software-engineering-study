@@ -1,4 +1,4 @@
-[Anterior](CompositionOverInheritance.md) | [Índice](../../SUMMARY.md) | [Próximo](FailFast.md)
+[Anterior](composition-over-inheritance.md) | [Índice](../../SUMMARY.md) | [Próximo](fail-fast.md)
 
 # Design for Testability — Projetar para Ser Testável (Princípio de Engenharia)
 
@@ -189,4 +189,4 @@ Comece com characterization tests e crie seams (interfaces) incrementalmente.
 ---
 
 
-[Anterior](CompositionOverInheritance.md) | [Índice](../../SUMMARY.md) | [Próximo](FailFast.md)
+[Anterior](composition-over-inheritance.md) | [Índice](../../SUMMARY.md) | [Próximo](fail-fast.md)

@@ -1,4 +1,4 @@
-[Anterior](Command.md) | [Índice](../../SUMMARY.md) | [Próximo](Decorator.md)
+[Anterior](command.md) | [Índice](../../SUMMARY.md) | [Próximo](decorator.md)
 
 # Composite — Estruturas em Árvore com Interface Uniforme (Padrão Estrutural)
 
@@ -252,4 +252,4 @@ Tente reduzir a interface comum ao mínimo e, se necessário, use double-dispatc
 ---
 
 
-[Anterior](Command.md) | [Índice](../../SUMMARY.md) | [Próximo](Decorator.md)
+[Anterior](command.md) | [Índice](../../SUMMARY.md) | [Próximo](decorator.md)

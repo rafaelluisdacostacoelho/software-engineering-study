@@ -1,4 +1,4 @@
-[Anterior](KISS.md) | [Índice](../../SUMMARY.md) | [Próximo](OCP.md)
+[Anterior](kiss.md) | [Índice](../../SUMMARY.md) | [Próximo](ocp.md)
 
 # SOLID — Princípios para Design Orientado a Objetos (nível Sênior / Especialista)
 
@@ -212,4 +212,4 @@ Os princípios são formulados em OO, mas ideias como separação de responsabil
 
 ---
 
-[Anterior](KISS.md) | [Índice](../../SUMMARY.md) | [Próximo](OCP.md)
+[Anterior](kiss.md) | [Índice](../../SUMMARY.md) | [Próximo](ocp.md)

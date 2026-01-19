@@ -1,4 +1,4 @@
-[Anterior](LawOfDemeter.md) | [Índice](../../SUMMARY.md) | [Próximo](DesignForTestability.md)
+[Anterior](law-of-demeter.md) | [Índice](../../SUMMARY.md) | [Próximo](design-for-testability.md)
 
 # Composition over Inheritance — Compor Objetos em vez de Herdar (Princípio de Design)
 
@@ -193,4 +193,4 @@ Quando o framework exige (ex.: classes base de UI) ou quando o domínio é realm
 ---
 
 
-[Anterior](LawOfDemeter.md) | [Índice](../../SUMMARY.md) | [Próximo](DesignForTestability.md)
+[Anterior](law-of-demeter.md) | [Índice](../../SUMMARY.md) | [Próximo](design-for-testability.md)

@@ -1,4 +1,4 @@
-[Anterior](Singleton.md) | [Índice](../../SUMMARY.md) | [Próximo](Strategy.md)
+[Anterior](singleton.md) | [Índice](../../SUMMARY.md) | [Próximo](strategy.md)
 
 # State — Comportamento Variável por Estado (State Machine) (Padrão Comportamental)
 
@@ -259,4 +259,4 @@ Versione estados, migre dados e mantenha transições compatíveis. Para workflo
 ---
 
 
-[Anterior](Singleton.md) | [Índice](../../SUMMARY.md) | [Próximo](Strategy.md)
+[Anterior](singleton.md) | [Índice](../../SUMMARY.md) | [Próximo](strategy.md)

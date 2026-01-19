@@ -1,4 +1,4 @@
-[Anterior](Proxy.md) | [Índice](../../SUMMARY.md) | [Próximo](State.md)
+[Anterior](proxy.md) | [Índice](../../SUMMARY.md) | [Próximo](state.md)
 
 # Singleton — Uma Instância por Processo (com Muitos Cuidados) (Padrão de Criação)
 
@@ -192,4 +192,4 @@ Não. Você terá um por réplica/pod. Exclusividade global exige coordenação 
 ---
 
 
-[Anterior](Proxy.md) | [Índice](../../SUMMARY.md) | [Próximo](State.md)
+[Anterior](proxy.md) | [Índice](../../SUMMARY.md) | [Próximo](state.md)

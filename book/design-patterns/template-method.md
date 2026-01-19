@@ -1,4 +1,4 @@
-[Anterior](Strategy.md) | [Índice](../../SUMMARY.md) | [Próximo](Visitor.md)
+[Anterior](strategy.md) | [Índice](../../SUMMARY.md) | [Próximo](visitor.md)
 
 # Template Method — Esqueleto de Algoritmo com Pontos de Extensão (Padrão Comportamental)
 
@@ -225,4 +225,4 @@ Quando o número de variantes cresce, hooks se multiplicam e a hierarquia vira d
 ---
 
 
-[Anterior](Strategy.md) | [Índice](../../SUMMARY.md) | [Próximo](Visitor.md)
+[Anterior](strategy.md) | [Índice](../../SUMMARY.md) | [Próximo](visitor.md)

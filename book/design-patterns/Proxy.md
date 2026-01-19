@@ -1,4 +1,4 @@
-[Anterior](Observer.md) | [Índice](../../SUMMARY.md) | [Próximo](Singleton.md)
+[Anterior](observer.md) | [Índice](../../SUMMARY.md) | [Próximo](singleton.md)
 
 # Proxy — Controlar Acesso a um Objeto (Cache, Segurança, Remoto) (Padrão Estrutural)
 
@@ -227,4 +227,4 @@ Use locks por chave, singleflight, ou caches que suportam “request coalescing�
 ---
 
 
-[Anterior](Observer.md) | [Índice](../../SUMMARY.md) | [Próximo](Singleton.md)
+[Anterior](observer.md) | [Índice](../../SUMMARY.md) | [Próximo](singleton.md)

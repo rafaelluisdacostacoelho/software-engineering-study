@@ -1,4 +1,4 @@
-[Anterior](../design-patterns/Visitor.md) | [Índice](../../SUMMARY.md) | [Próximo](code-quality-and-complexity-metrics.md)
+[Anterior](../design-patterns/visitor.md) | [Índice](../../SUMMARY.md) | [Próximo](code-quality-and-complexity-metrics.md)
 
 # Data Structures and Big-O — Fundamentos Aplicados (Nível Sênior)
 
@@ -190,4 +190,4 @@ Para lookup frequente, normalmente sim. Mas se o conjunto é pequeno e a operaç
 ---
 
 
-[Anterior](../design-patterns/Visitor.md) | [Índice](../../SUMMARY.md) | [Próximo](code-quality-and-complexity-metrics.md)
+[Anterior](../design-patterns/visitor.md) | [Índice](../../SUMMARY.md) | [Próximo](code-quality-and-complexity-metrics.md)
