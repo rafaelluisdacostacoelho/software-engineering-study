@@ -1,47 +1,87 @@
-# [Título do Assunto]
+# [Titulo do Assunto]
 
-## Visão Geral e Contexto de Mercado
-
-Explique o conceito com profundidade, coloque-o no contexto de ciclo de vida de software moderno (empresas, squads ágeis, microserviços, DevOps).  
-_Exemplo: A abordagem TDD, quando bem aplicada em sistemas críticos com pipelines CI/CD, reduz drasticamente retrabalho e acelera feedback loops em squads de produto._
+> **Objetivo deste template**
+> Criar documentacao que funcione como **treinamento** para dev senior e especialista: teoria suficiente para formar criterio, exemplos concretos, e detalhamento de operacao (falhas, observabilidade, seguranca, trade-offs).
 
 ---
 
-## Fundamentos, Evolução e Padrões de Mercado
+## Objetivos de Aprendizado (para senior)
 
-- **Histórico e Evolução do Tema**  
-  Ex: "Testes evoluíram de estratégias manuais a automação complexa integrada aos deployments."
+Ao final, a pessoa deve conseguir:
 
-- **Padrões e Protocolos Usados no Mercado**
-  - Normas (ex: ISO/IEC para testes)
-  - Design Patterns recorrentes
-  - Metodologias aceitas (ex: ATDD, BDD dentro de pipelines DevOps)
+- Explicar o tema e **por que** ele existe (problema e contexto).
+- Aplicar o tema com **invariantes** claros e contratos explicitados.
+- Identificar **falhas reais** e desenhar resiliencia.
+- Fazer review tecnico usando checklists (arquitetura, seguranca, operacao).
+- Implementar uma versao minima com exemplos (codigo, schema, queries).
 
 ---
 
-## Diagramas e Intuição Visual (quando pertinente)
+## Contexto, Escopo e Nao-Objetivos
 
-Inclua diagramas e/ou gráficos sempre que eles ajudarem a **reduzir ambiguidade** e acelerar a compreensão.
+- **Quando usar** (sinais de necessidade, escala, risco, criticidade).
+- **Quando nao usar** (complexidade desnecessaria, alternativas mais simples).
+- **Assumptions** (modelo de consistencia, dominio, constraints).
+- **Nao-objetivos** (o que fica fora para nao virar um texto infinito).
+
+---
+
+## Glossario (padronize linguagem)
+
+| Termo | Definicao curta | Observacao pratica |
+|------|------------------|--------------------|
+| [Termo] | [Definicao] | [Como aparece em incidentes/producao] |
+
+---
+
+## Modelo Mental (intuicao + formalizacao)
+
+Explique primeiro com intuicao, depois com rigor:
+
+- **Metafora curta** (1 paragrafo)
+- **Modelo formal** (entidades, estados, transicoes, contratos)
+- **Invariantes** (o que nao pode ser violado)
+
+---
+
+## Fundamentos Teoricos e Evolucao
+
+### Teoria essencial
+
+- Definicoes formais (se existirem): consistencia, atomicidade, idempotencia, causalidade, etc.
+- Propriedades desejadas e limites: latencia, disponibilidade, consistencia, custo.
+- Onde a teoria costuma ser mal interpretada (pegadinhas de senior).
+
+### Evolucao e padroes de mercado
+
+- Por que o mercado convergiu para certos padroes.
+- Variantes comuns e quando cada uma faz sentido.
+
+---
+
+## Diagramas e Intuicao Visual (quando pertinente)
+
+Inclua diagramas e/ou graficos sempre que eles ajudarem a **reduzir ambiguidade** e acelerar a compreensao.
 
 Use especialmente quando houver:
 
-- **Fluxos** (pipeline, request lifecycle, CI/CD, estados e transições)
-- **Estruturas** (componentes, camadas, dependências, árvores, grafos)
-- **Algoritmos** (passo a passo, invariantes, decisões)
-- **Trade-offs** (custo vs latência, throughput vs consistência)
+- **Fluxos** (request lifecycle, pipelines, estados e transicoes)
+- **Estruturas** (componentes, camadas, dependencias)
+- **Algoritmos** (passo a passo, invariantes, decisoes)
+- **Trade-offs** (custo vs latencia, throughput vs consistencia)
 
 ### Mermaid (modo compatibilidade GitHub)
 
 Para funcionar bem no GitHub, use um subconjunto mais conservador do Mermaid:
 
-- Prefira `graph` (ex.: `graph LR`, `graph TD`) em vez de sintaxes mais “novas”.
-- Escreva labels **simples e curtas**, de preferência em ASCII:
+- Prefira `graph` (ex.: `graph LR`, `graph TD`) em vez de sintaxes mais novas.
+- Escreva labels **simples e curtas**, de preferencia em ASCII:
   - Evite acentos dentro do Mermaid (use `Nao`, `Operacao`, `Padrao`).
-  - Evite parênteses `()`, ponto de interrogação `?`, barra `/`, colchetes `[]` dentro de textos.
-  - Evite `>` dentro de labels (use `maior que`).
+  - Evite parenteses `()`, ponto de interrogacao `?`, barra `/`, colchetes `[]` em textos.
+  - Evite `>` em labels (use `maior que`).
 - Para texto na aresta, use `A -- texto --> B` (evite `A -->|texto| B`).
 
-#### Exemplo 1: Fluxo/decisao
+#### Exemplo: fluxo/decisao
 
 ```mermaid
 graph TD
@@ -52,7 +92,7 @@ C --> E[Saida]
 D --> E
 ```
 
-#### Exemplo 2: Componentes/dependencias
+#### Exemplo: componentes/dependencias
 
 ```mermaid
 graph LR
@@ -62,159 +102,227 @@ SVC --> DB[Database]
 SVC --> MQ[Queue]
 ```
 
-#### Exemplo 3: Algoritmo (loop)
+#### Exemplo: state machine (minimo)
 
 ```mermaid
 graph LR
-S[Start] --> P[Processa]
-P --> Q{Continua}
-Q -- Sim --> P
-Q -- Nao --> E[End]
+S[Start] --> P[Processing]
+P --> O[Ok]
+P --> F[Fail]
 ```
 
 ### Dica pratica
 
-- Se um diagrama quebrar no GitHub, simplifique os textos do Mermaid (labels menores, sem caracteres especiais) antes de tentar recursos mais complexos.
+- Se um diagrama quebrar no GitHub, simplifique textos do Mermaid (labels menores, sem caracteres especiais).
 
 ---
 
-## Principais Desafios no Uso Profissional
+## Arquitetura de Referencia (como isso vive em sistemas reais)
 
-- **Escalabilidade dos Testes/Padrões**  
-  Como o tema se comporta em sistemas grandes e distribuídos.
-- **Performance e Manutenção**  
-  Ex: "Execução lenta de testes pode travar pipelines; técnicas de paralelização e testes focados são mandatórias."
-- **Gerenciamento Técnico (Debt, Coverage, Flakiness)**  
-  Como resolver e monitorar.
+Descreva uma arquitetura de referencia com:
 
----
+- Componentes (servicos, filas, storage)
+- Fluxos sincronos e assincronos
+- Fonte de verdade (source of truth)
+- Derivacoes (projecoes, caches, indices)
 
-## Estratégias Avançadas e Decisões Arquiteturais
-
-- **Integração com CI/CD**
-- **Práticas de mercado: Pirâmide de Testes, Testes em múltiplos ambientes, mocks de infraestrutura**
-- **Métrica de Qualidade**  
-  - Code Coverage realista (quanto cobre, quanto importa — branch, mutation)
-  - Flaky test detection, ficha de manutenção
-  - Linters com testes e padrões
+Inclua no minimo um diagrama de componentes e um de fluxo (quando aplicavel).
 
 ---
 
-## Exemplos Avançados (Python, C# e Go)
+## Modelo de Dados e Contratos
 
-### Python
-```python
-import pytest
-from unittest.mock import patch
+### Entidades e eventos
 
-@pytest.mark.parametrize('input, esperado', [(3, "Fizz"), (5, "Buzz"), (15, "FizzBuzz")])
-def test_fizzbuzz(input, esperado):
-    assert fizzbuzz(input) == esperado
+- Entidades principais e seus ids estaveis
+- Eventos/commands (se aplicavel): nomes, payloads, chaves de dedup
 
-def test_integração_bd(monkeypatch):
-    with monkeypatch.context() as m:
-        m.setattr('modulo.db.conectar', lambda: MockDB())
-        assert executar_consulta() == 'ok'
+### Schema (exemplo minimo)
+
+Inclua exemplos reais (ajuste ao tema):
+
+- SQL para tabelas criticas e indices
+- Estruturas de mensagens (JSON) e contratos
+- Regras de validacao e constraints
+
+---
+
+## Algoritmos, Fluxos Criticos e Invariantes
+
+### Invariantes (obrigatorio para temas criticos)
+
+Liste invariantes como sentencas verificaveis:
+
+- "Nunca existira mais de um [efeito] para o mesmo [id]"
+- "A soma de [X] deve ser igual a [Y]"
+- "Transicoes validas: [A] -> [B], [B] -> [C]"
+
+### Pseudocodigo / codigo minimo
+
+Inclua pelo menos um exemplo executavel ou quase executavel:
+
+```text
+handle(command):
+  validate
+  dedup
+  persist effect
+  publish event
 ```
-- Testando side effects, integrações, mocks de sistemas externos, paralelização via pytest-xdist.
 
-### C#
-```csharp
-using Moq;
-using Xunit;
+Explique:
 
-public class PaymentTests {
-    [Fact]
-    public void ProcessPayment_WhenDBFails_ShouldRollback() {
-        var repo = new Mock<IPaymentRepository>();
-        repo.Setup(x => x.Save()).Throws(new Exception());
-
-        var service = new PaymentService(repo.Object);
-
-        Assert.Throws<Exception>(() => service.ProcessPayment());
-        // assert efeito colateral, ex: logs, mensagem para Sentry
-    }
-}
-```
-- Uso de Mock, asserts avançados, integração com logs/docs de incidentes.
-
-### Go
-```go
-func TestHandler_Parallel_Integration(t *testing.T) {
-    t.Parallel()
-    server := httptest.NewServer(...)
-    defer server.Close()
-    res, err := http.Get(server.URL + "/health")
-    require.NoError(t, err)
-    require.Equal(t, 200, res.StatusCode)
-}
-```
-- Testes paralelos, integração em endpoints, uso de require/helpers para evitar flaky tests.
+- Pre-condicoes e post-condicoes
+- Concorrencia (locks, otimismo, filas)
+- Como evitar efeitos duplicados
 
 ---
 
-## Boas Práticas Sêniores e Armadilhas
+## Falhas, Resiliencia e Recuperacao
 
-- **Testes determinísticos, rápidos, repeatable.**
-- Como lidar com testes legados sem confiabilidade.
-- Limite de coverage como métrica, armadilha de 100%.
-- Testes como documentação viva e base para onboarding.
-- Automatize tudo: hooks em PR, código bloqueando deploy sem cobertura mínima.
-- Testes para incidentes: como criar cenários de falha realistas.
-- Evitar overdesign: escolha patterns conforme contexto, não por modismo.
+Mapeie falhas reais e como o sistema se comporta:
 
----
+- Timeouts e resultados desconhecidos
+- Retries e idempotencia (producer e consumer)
+- Duplicidade e fora de ordem
+- Particoes de rede e consistencia eventual
+- Backpressure e overload
 
-## Integração na Arquitetura Real
+Inclua:
 
-- **Orquestração com Docker/Kubernetes:** Testes de contract e integração em ambientes orquestrados.
-- **Pipelines CI/CD:** Exemplo de configuração ideal, hooks para pass/fail, métricas exportadas (Prometheus, Datadog).
-- **Integração com ferramentas de QA, análise estática, monitoramento pós-deploy.**
-- **Testes e Infra-as-Code:** Estratégias para garantir testes de recursos AWS/Azure/GCP.
+- Estado "unknown" (quando aplicavel) e reconciliacao
+- Estrategia de retry (limites, jitter, circuit breaker)
+- Estrategia de replay e reprocessamento
 
 ---
 
-## Métricas, Monitoramento e Melhoria Contínua
+## Observabilidade e Operacao (production ready)
 
-- Cobertura, tempo de execução, flaky rate, incidentes reais pegos em produção vs. cobertura.
-- Gersção de relatórios automáticos.
-- Acompanhamento com dashboards reais.
-- Estratégias para cultura de melhoria (CoP, guildas técnicas).
+### Logs, metricas e traces
+
+- Chaves obrigatorias em log (ids, correlation ids)
+- Metricas de negocio e sistema (taxas, lag, latencia)
+- Tracing ponta a ponta e propagacao de contexto
+
+### Como documentar metricas (sem frases curtas)
+
+Quando o texto falar de metricas (ex.: p95, p99, taxa de erro, lag), **nao** escreva apenas definicoes de 1 frase. Trate como livro de treinamento:
+
+- **O que eh** (definicao, unidade, tipo)
+- **Por que importa** (qual decisao operacional ela suporta)
+- **Como medir** (onde instrumentar, cardinalidade, agregacao)
+- **Como interpretar** (sinais de overload, contencao, regressao)
+- **Armadilhas** (media escondendo cauda, counters resetando, cardinalidade alta)
+
+Use esta ficha por metrica:
+
+| Campo | Preencha |
+|------|----------|
+| Nome | [ex.: request_latency_seconds] |
+| Tipo | Counter / Gauge / Histogram |
+| Unidade | ms / s / bytes / items |
+| Labels | [endpoint, result, dependency] (evitar alta cardinalidade) |
+| O que eh | [definicao] |
+| Por que importa | [impacto em SLO, corretude, custo] |
+| Interpretacao | [o que significa subir/descer] |
+| Alertas | [limites e janelas] |
+| Armadilhas | [ex.: media, p99, resets] |
+
+#### Percentis (p95, p99) como explicar
+
+Explique sempre:
+
+- Percentil eh um resumo de distribuicao: `p99` significa que 99% das amostras ficaram abaixo daquele valor.
+- Por que **cauda** importa em concorrencia (fila/lock afeta poucos, mas derruba p99).
+- Por que media nao basta (media esconde outliers).
+- Como medir corretamente (histogramas / tooling equivalente) e qual unidade.
+
+### Alertas e SLOs
+
+- SLI/SLOs propostos (latencia, erro, backlog)
+- Alertas acionaveis (com playbook)
 
 ---
 
-## Frameworks e Ferramentas do Mercado
+## Seguranca, Privacidade e Compliance
 
-- **Python:** pytest, pytest-cov, FactoryBoy, behave, tox, coverage.py, allure
-- **C#:** xUnit, Xunit.Gherkin.Quick, Moq, SpecFlow, NCrunch, Coverlet, SonarQube
-- **Go:** GoConvey, Testify, ginkgo/gomega, GoMock, Codecov.io
-- **Ferramentas de integração:** GitHub Actions, Azure DevOps, Jenkins, CircleCI, SonarCloud
+Inclua o minimo:
 
----
-
-## Recursos Avançados e Leituras Recomendadas
-
-- Artigos, talks de conferências, repositórios exemplares de grandes empresas (Netflix, Uber, Nubank)
-- Casos de uso reais (papers, blogs, incident reviews)
-- Livros: _Building Microservices (Sam Newman)_, _Clean Architecture (Robert C. Martin)_, _The Pragmatic Programmer_, _Distributed Systems Observability_
+- Threat model (abuso, fraude, escalacao, replay)
+- Protecao de dados (PII, secrets, criptografia em repouso e em transito)
+- Autorizacao/autenticacao e auditoria
 
 ---
 
-## FAQ Especialista
+## Performance, Capacidade e Custos
 
-**Como evitar “testes que só testam mocks”?**  
-Dê exemplos práticos de integração real. Use contract testing (ex: Pact no Go, Python).
-
-**Testes em sistemas legacy altamente acoplados?**  
-Apresente estratégia em “faixas”: characterization tests, refatoração incremental, prioridade por risco.
-
-**Como vender a importância do investimento em testes avançados dentro da empresa?**  
-Use argumentos de custo de incidentes, velocidade de deploy e retenção de talento técnico.
+- Caminho critico e gargalos
+- Limites (rate limits, tamanho de payload, cardinalidade)
+- Custos dominantes (compute, storage, rede)
+- Estrategias de cache e invalidacao (quando aplicavel)
 
 ---
 
-## Referências e Práticas do Mercado
+## Testabilidade (como provar que esta correto)
 
-- _Catálogo de Testes do ThoughtWorks Tech Radar_
-- _Exemplos aprofundados em repositórios de empresas líderes_
-- _Guias de qualidade de software da Martin Fowler, Kent Beck, Google Testing Blog_
+Descreva uma estrategia em camadas:
+
+- Unit (invariantes e funcoes puras)
+- Integration (storage, filas, provedores)
+- Contract (eventos/APIs)
+- E2E (fluxo principal)
+
+Para sistemas criticos, inclua:
+
+- Testes de idempotencia e duplicidade
+- Testes de concorrencia
+- Testes de resiliencia (fault injection / chaos)
+
+---
+
+## Trade-offs, Alternativas e Decisoes (ADR-lite)
+
+Documente escolhas como se fosse um review:
+
+- Opcoes consideradas
+- Por que escolhemos X e nao Y
+- Consequencias e riscos
+- O que monitorar em producao para validar a escolha
+
+Uma tabela ajuda:
+
+| Opcao | Prós | Contras | Quando usar |
+|------|------|---------|-------------|
+| [X] | [ ] | [ ] | [ ] |
+
+---
+
+## Checklist de Review (para usar em PR e design review)
+
+- Invariantes estao explicitados e testados
+- Contratos e schemas versionados e validados
+- Idempotencia definida (producer e consumer)
+- Observabilidade suficiente (logs/metricas/traces)
+- Playbooks para falhas comuns
+- Seguranca: autenticacao/autorizacao e protecao de dados
+
+---
+
+## Estudos de Caso e Exercicios
+
+Inclua exercicios para fixar o conhecimento:
+
+- "Projete X sob constraint Y"
+- "Qual estrategia de retry para este fluxo?"
+- "Como reconciliar quando ha estado desconhecido?"
+- "Quais metricas voce colocaria no dashboard?"
+
+---
+
+## Referencias (alta qualidade)
+
+Prefira:
+
+- Documentacao oficial (protocolos, RFCs, cloud providers)
+- Papers e posts tecnicos com detalhes
+- Talks tecnicas com conteudo pratico
+- Livros de base (arquitetura, distribuicao, observabilidade)

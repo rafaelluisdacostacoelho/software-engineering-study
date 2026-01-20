@@ -67,46 +67,50 @@
 
 - **Concorrência**
 	- **53.** [Concorrência e Paralelismo](book/concurrency/concurrency-and-parallelism.md)
-	- **54.** [Problemas clássicos de concorrência](book/concurrency/classic-concurrency-problems.md)
+	- **54.** [Memory Model & Atomics — Happens-Before e Visibilidade](book/concurrency/memory-model-and-atomics.md)
+	- **55.** [Primitivas de Sincronizacao — Locks, Semaforos e Contencao](book/concurrency/synchronization-primitives-and-contention.md)
+	- **56.** [Problemas classicos de concorrencia](book/concurrency/classic-concurrency-problems.md)
+	- **57.** [Async, Work Queues e Backpressure](book/concurrency/async-concurrency-and-backpressure.md)
+	- **58.** [Testes e Debug de Concorrencia](book/concurrency/testing-and-debugging-concurrency.md)
 
 - **Operações Críticas**
-	- **55.** [Transações & ACID](book/critical-operations/transactions-acid.md)
-	- **56.** [Controle de concorrência em DB](book/critical-operations/db-concurrency-control.md)
-	- **57.** [Operacoes Criticas em Pagamentos e Fintech — Visao Geral](book/critical-operations/payments-fintech-overview.md)
-	- **58.** [Payment Ledgers — Double Entry, Imutabilidade e Fonte de Verdade](book/critical-operations/payment-ledgers-and-double-entry.md)
-	- **59.** [Idempotencia em Pagamentos — Idempotency Key, Dedup e Retries](book/critical-operations/idempotency-keys-and-dedup.md)
-	- **60.** [Antifraude em Pagamentos — Risk Checks, Step Up e Revisao Manual](book/critical-operations/antifraud-risk-checks-and-step-up.md)
-	- **61.** [Sagas em Pagamentos — Orquestracao, Compensacao e Estados](book/critical-operations/sagas-for-payments.md)
-	- **62.** [Transactional Outbox & CDC — Publicacao Confiavel de Eventos](book/critical-operations/transactional-outbox-and-cdc.md)
-	- **63.** [Distributed Locks — Leases, Fencing Tokens e Leader Election](book/critical-operations/distributed-locks-leases-fencing.md)
-	- **64.** [Reconciliation & Auditabilidade — Fechar Gaps sem Duplicar Efeitos](book/critical-operations/reconciliation-and-auditability.md)
+	- **59.** [Transações & ACID](book/critical-operations/transactions-acid.md)
+	- **60.** [Controle de concorrência em DB](book/critical-operations/db-concurrency-control.md)
+	- **61.** [Operacoes Criticas em Pagamentos e Fintech — Visao Geral](book/critical-operations/payments-fintech-overview.md)
+	- **62.** [Payment Ledgers — Double Entry, Imutabilidade e Fonte de Verdade](book/critical-operations/payment-ledgers-and-double-entry.md)
+	- **63.** [Idempotencia em Pagamentos — Idempotency Key, Dedup e Retries](book/critical-operations/idempotency-keys-and-dedup.md)
+	- **64.** [Antifraude em Pagamentos — Risk Checks, Step Up e Revisao Manual](book/critical-operations/antifraud-risk-checks-and-step-up.md)
+	- **65.** [Sagas em Pagamentos — Orquestracao, Compensacao e Estados](book/critical-operations/sagas-for-payments.md)
+	- **66.** [Transactional Outbox & CDC — Publicacao Confiavel de Eventos](book/critical-operations/transactional-outbox-and-cdc.md)
+	- **67.** [Distributed Locks — Leases, Fencing Tokens e Leader Election](book/critical-operations/distributed-locks-leases-fencing.md)
+	- **68.** [Reconciliation & Auditabilidade — Fechar Gaps sem Duplicar Efeitos](book/critical-operations/reconciliation-and-auditability.md)
 
 - **Eventos e Filas**
-	- **65.** [Filas e Messaging](book/events-and-queues/queues-and-messaging.md)
-	- **66.** [Consistência distribuída](book/events-and-queues/distributed-consistency.md)
+	- **69.** [Filas e Messaging](book/events-and-queues/queues-and-messaging.md)
+	- **70.** [Consistência distribuída](book/events-and-queues/distributed-consistency.md)
 
 - **Escalabilidade**
-	- **67.** [Caching Strategies](book/scalability/caching-strategies.md)
-	- **68.** [Arquitetura orientada a eventos](book/scalability/event-driven-architecture.md)
-	- **69.** [CQRS](book/scalability/cqrs.md)
-	- **70.** [Event Sourcing](book/scalability/event-sourcing.md)
-	- **71.** [Microservices Best Practices](book/scalability/microservices-best-practices.md)
+	- **71.** [Caching Strategies](book/scalability/caching-strategies.md)
+	- **72.** [Arquitetura orientada a eventos](book/scalability/event-driven-architecture.md)
+	- **73.** [CQRS](book/scalability/cqrs.md)
+	- **74.** [Event Sourcing](book/scalability/event-sourcing.md)
+	- **75.** [Microservices Best Practices](book/scalability/microservices-best-practices.md)
 
 - **Cloud**
-	- **72.** [Cloud Native Patterns](book/cloud/cloud-native-patterns.md)
-	- **73.** [Security Best Practices](book/cloud/security-best-practices.md)
+	- **76.** [Cloud Native Patterns](book/cloud/cloud-native-patterns.md)
+	- **77.** [Security Best Practices](book/cloud/security-best-practices.md)
 
 - **Missão Crítica**
-	- **74.** [High Availability & Fault Tolerance](book/mission-critical/high-availability-fault-tolerance.md)
+	- **78.** [High Availability & Fault Tolerance](book/mission-critical/high-availability-fault-tolerance.md)
 
 - **Testes**
-	- **75.** [TDD](book/tests/tdd.md)
-	- **76.** [BDD](book/tests/bdd.md)
-	- **77.** [Unit Testing](book/tests/unit-testing.md)
+	- **79.** [TDD](book/tests/tdd.md)
+	- **80.** [BDD](book/tests/bdd.md)
+	- **81.** [Unit Testing](book/tests/unit-testing.md)
 
 - **Carreira**
-	- **78.** [System Design Interview](book/career/system-design-interview.md)
-	- **79.** [Code Review & Collaboration](book/career/code-review-collaboration.md)
+	- **82.** [System Design Interview](book/career/system-design-interview.md)
+	- **83.** [Code Review & Collaboration](book/career/code-review-collaboration.md)
 
 - **Anexos**
-	- **80.** [Template de Documentação (GitHub)](.github/DOCUMENTATION_TEMPLATE.md)
+	- **84.** [Template de Documentação (GitHub)](.github/DOCUMENTATION_TEMPLATE.md)
