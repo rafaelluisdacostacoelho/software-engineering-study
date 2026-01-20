@@ -1,4 +1,4 @@
-[Anterior](../critical-operations/db-concurrency-control.md) | [Índice](../../SUMMARY.md) | [Próximo](distributed-consistency.md)
+[Anterior](../critical-operations/reconciliation-and-auditability.md) | [Índice](../../SUMMARY.md) | [Próximo](distributed-consistency.md)
 
 # Queues & Messaging — Filas, Eventos e Mensageria
 
@@ -228,4 +228,4 @@ Versione mensagens, mantenha compatibilidade (fields opcionais), e use schema re
 
 ---
 
-[Anterior](../critical-operations/db-concurrency-control.md) | [Índice](../../SUMMARY.md) | [Próximo](distributed-consistency.md)
+[Anterior](../critical-operations/reconciliation-and-auditability.md) | [Índice](../../SUMMARY.md) | [Próximo](distributed-consistency.md)

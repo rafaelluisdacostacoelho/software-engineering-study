@@ -1,4 +1,4 @@
-[Anterior](transactions-acid.md) | [Índice](../../SUMMARY.md) | [Próximo](../events-and-queues/queues-and-messaging.md)
+[Anterior](transactions-acid.md) | [Índice](../../SUMMARY.md) | [Próximo](payments-fintech-overview.md)
 
 # DB Concurrency Control — Controle de Concorrência em Bancos
 
