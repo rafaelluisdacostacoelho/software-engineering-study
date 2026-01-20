@@ -57,25 +57,25 @@ A regra de ouro em produção: **otimize a estrutura do problema antes de micro-
 
 ```mermaid
 graph TD
-A[Problema] --> B{Qual padrão de acesso domina?}
-B -- Lookup por chave / membership --> C[Hash map / Set]
-B -- Ordenação e top-k recorrente --> D[Heap / Priority Queue]
-B -- Leitura sequencial e cache locality --> E[Array / Slice]
-B -- Range query (soma min max) --> F[Fenwick, Segment Tree, Sparse Table]
-B -- Prefixo/autocomplete --> G[Trie / Radix]
-B -- Conectividade dinâmica --> H[Union-Find DSU]
-B -- Caminhos e dependências --> I[Grafos BFS DFS Dijkstra]
+A[Problema] --> B{Padrao de acesso dominante}
+B -- Lookup por chave --> C[Hash map e Set]
+B -- Ordenacao e top-k --> D[Heap ou Priority Queue]
+B -- Leitura sequencial --> E[Array ou Slice]
+B -- Range query soma min max --> F[Fenwick Segment Tree Sparse Table]
+B -- Prefixo autocomplete --> G[Trie ou Radix]
+B -- Conectividade dinamica --> H[Union-Find DSU]
+B -- Caminhos e dependencias --> I[Grafos BFS DFS Dijkstra]
 ```
 
 ### Custo cresce quando $n$ cresce
 
 ```mermaid
 graph LR
-S[Entrada cresce: n] --> P[Operação em hot path]
-P --> Q{Complexidade por operação}
-Q -- O(1) médio/amortizado --> R[Normalmente escala bem]
-Q -- O(n) --> T[Pode virar gargalo]
-Q -- O(n^2) --> U[Quase sempre explode em produção]
+S[Entrada cresce: n] --> P[Operacao em hot path]
+P --> Q{Complexidade por operacao}
+Q -- O1 medio amortizado --> R[Normalmente escala bem]
+Q -- On --> T[Pode virar gargalo]
+Q -- On2 --> U[Quase sempre explode em producao]
 ```
 
 ## Principais Desafios no Uso Profissional

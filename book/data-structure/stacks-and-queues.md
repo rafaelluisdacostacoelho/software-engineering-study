@@ -49,10 +49,10 @@ A[enqueue 1] --> B[enqueue 2] --> C[dequeue retorna 1]
 
 ```mermaid
 graph LR
-I[Percorre da esquerda p/ direita] --> S[Stack guarda índices (valores em ordem decrescente)]
-S --> P{Novo valor > topo?}
+I[Percorre esquerda para direita] --> S[Stack guarda indices - valores em ordem decrescente]
+S --> P{Novo valor maior que topo}
 P -- Sim --> R[Pop e resolve resposta]
-P -- Não --> K[Push índice]
+P -- Nao --> K[Push indice]
 R --> P
 ```
 

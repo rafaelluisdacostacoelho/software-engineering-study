@@ -52,8 +52,8 @@ O diferencial sênior é dominar *padrões recorrentes* que transformam problema
 ```mermaid
 graph LR
 A[left=0 right=0] --> B[Expande: right++]
-B --> C{Violou a regra? (ex.: soma >= target)}
-C -- Não --> B
+B --> C{Violou a regra: soma >= target}
+C -- Nao --> B
 C -- Sim --> D[Atualiza resposta]
 D --> E[Contrai: left++]
 E --> C
@@ -63,15 +63,15 @@ E --> C
 
 ```mermaid
 graph LR
-A[Array a] --> B[Constrói prefix (p(i)=soma dos i primeiros)]
-B --> C[Query soma(l..r) = p(r+1) - p(l)]
+A[Array a] --> B[Constroi prefix: prefix_i = soma dos i primeiros]
+B --> C[Query soma l a r = prefix_r1 - prefix_l]
 ```
 
 ### Binary Search em predicado monotônico
 
 ```mermaid
 graph TD
-A[Domínio ordenado] --> B{ok(mid)?}
+A[Dominio ordenado] --> B{ok mid}
 B -- true --> C[Move hi = mid]
 B -- false --> D[Move lo = mid+1]
 C --> B
