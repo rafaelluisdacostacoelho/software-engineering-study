@@ -1,4 +1,4 @@
-[Anterior](csharp.md) | [Índice](../../SUMMARY.md)
+[Anterior](csharp.md) | [Índice](../../SUMMARY.md) | [Próximo](linux.md)
 
 # Golang — Serviços Simples, Confiáveis e “Production Friendly” (nível Sênior / Especialista)
 
@@ -149,4 +149,4 @@ Sim, mas exige padrões de pacote, testes e observabilidade. Simplicidade não a
 
 ---
 
-[Anterior](csharp.md) | [Índice](../../SUMMARY.md)
+[Anterior](csharp.md) | [Índice](../../SUMMARY.md) | [Próximo](linux.md)

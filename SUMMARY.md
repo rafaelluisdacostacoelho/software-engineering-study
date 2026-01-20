@@ -119,6 +119,11 @@
 	- **87.** [Ansible](book/technologies/ansible.md)
 	- **88.** [C#](book/technologies/csharp.md)
 	- **89.** [Golang](book/technologies/golang.md)
+	- **90.** [Linux](book/technologies/linux.md)
+	- **91.** [GitHub Actions (CI/CD)](book/technologies/github-actions.md)
+	- **92.** [Observability (Prometheus/Grafana)](book/technologies/observability-prometheus-grafana.md)
+	- **93.** [Kafka](book/technologies/kafka.md)
+	- **94.** [PostgreSQL](book/technologies/postgresql.md)
 
 - **Anexos**
-	- **90.** [Template de Documentação (GitHub)](.github/DOCUMENTATION_TEMPLATE.md)
+	- **95.** [Template de Documentação (GitHub)](.github/DOCUMENTATION_TEMPLATE.md)
