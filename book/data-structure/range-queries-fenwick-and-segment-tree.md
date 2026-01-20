@@ -1,4 +1,4 @@
-[Anterior](union-find-and-connectivity.md) | [Índice](../../SUMMARY.md) | [Próximo](../complexity/code-quality-and-complexity-metrics.md)
+[Anterior](union-find-and-connectivity.md) | [Índice](../../SUMMARY.md) | [Próximo](caches-eviction-lru-lfu.md)
 
 # Range Queries — Fenwick (BIT), Segment Tree e Sparse Table
 
@@ -167,4 +167,4 @@ Se o problema é soma e updates pontuais, Fenwick é mais simples. Segment tree 
 **Sparse table vale a pena?**  
 Para min/max/gcd em array estático com muitas queries, sim.
 
-[Anterior](union-find-and-connectivity.md) | [Índice](../../SUMMARY.md) | [Próximo](../complexity/code-quality-and-complexity-metrics.md)
+[Anterior](union-find-and-connectivity.md) | [Índice](../../SUMMARY.md) | [Próximo](caches-eviction-lru-lfu.md)

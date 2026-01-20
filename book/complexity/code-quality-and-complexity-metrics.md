@@ -1,4 +1,4 @@
-[Anterior](../data-structure/range-queries-fenwick-and-segment-tree.md) | [Índice](../../SUMMARY.md) | [Próximo](../concurrency/concurrency-and-parallelism.md)
+[Anterior](../data-structure/vector-search-ann.md) | [Índice](../../SUMMARY.md) | [Próximo](../concurrency/concurrency-and-parallelism.md)
 
 # Code Quality & Complexity Metrics — Medir para Melhorar
 
@@ -203,4 +203,4 @@ Refatoração incremental: extração de funções, reduzir nesting, criar abstr
 ---
 
 
-[Anterior](../data-structure/range-queries-fenwick-and-segment-tree.md) | [Índice](../../SUMMARY.md) | [Próximo](../concurrency/concurrency-and-parallelism.md)
+[Anterior](../data-structure/vector-search-ann.md) | [Índice](../../SUMMARY.md) | [Próximo](../concurrency/concurrency-and-parallelism.md)

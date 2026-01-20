@@ -56,42 +56,49 @@
 	- **42.** [Grafos — Caminhos Mínimos e MST](book/data-structure/shortest-path-and-mst.md)
 	- **43.** [Union-Find (DSU) — Conectividade Dinâmica e Kruskal](book/data-structure/union-find-and-connectivity.md)
 	- **44.** [Range Queries — Fenwick (BIT), Segment Tree e Sparse Table](book/data-structure/range-queries-fenwick-and-segment-tree.md)
-	- **45.** [Métricas de Qualidade e Complexidade](book/complexity/code-quality-and-complexity-metrics.md)
+	- **45.** [Caches & Eviction — LRU, LFU, TTL e Cache Stampede](book/data-structure/caches-eviction-lru-lfu.md)
+	- **46.** [Consistent Hashing & Sharding — Particionamento com Menos Churn](book/data-structure/consistent-hashing-and-sharding.md)
+	- **47.** [Probabilistic Data Structures — Bloom Filter, Sketches e HLL](book/data-structure/probabilistic-data-structures.md)
+	- **48.** [Storage Indexes — B Tree, LSM Tree e Inverted Index](book/data-structure/storage-indexes-btree-lsm-inverted.md)
+	- **49.** [Queues no Mundo Real — Ring Buffer, Priority Queue e Backpressure](book/data-structure/queues-ring-buffer-backpressure.md)
+	- **50.** [Rate Limiting — Token Bucket, Leaky Bucket e Sliding Window](book/data-structure/rate-limiting-algorithms-and-data-structures.md)
+	- **51.** [Vector Search — ANN, HNSW e IVF (Relevancia Atual)](book/data-structure/vector-search-ann.md)
+	- **52.** [Métricas de Qualidade e Complexidade](book/complexity/code-quality-and-complexity-metrics.md)
 
 - **Concorrência**
-	- **46.** [Concorrência e Paralelismo](book/concurrency/concurrency-and-parallelism.md)
-	- **47.** [Problemas clássicos de concorrência](book/concurrency/classic-concurrency-problems.md)
+	- **53.** [Concorrência e Paralelismo](book/concurrency/concurrency-and-parallelism.md)
+	- **54.** [Problemas clássicos de concorrência](book/concurrency/classic-concurrency-problems.md)
 
 - **Operações Críticas**
-	- **48.** [Transações & ACID](book/critical-operations/transactions-acid.md)
-	- **49.** [Controle de concorrência em DB](book/critical-operations/db-concurrency-control.md)
+	- **55.** [Transações & ACID](book/critical-operations/transactions-acid.md)
+	- **56.** [Controle de concorrência em DB](book/critical-operations/db-concurrency-control.md)
 
 - **Eventos e Filas**
-	- **50.** [Filas e Messaging](book/events-and-queues/queues-and-messaging.md)
-	- **51.** [Consistência distribuída](book/events-and-queues/distributed-consistency.md)
+	- **57.** [Filas e Messaging](book/events-and-queues/queues-and-messaging.md)
+	- **58.** [Consistência distribuída](book/events-and-queues/distributed-consistency.md)
 
 - **Escalabilidade**
-	- **52.** [Caching Strategies](book/scalability/caching-strategies.md)
-	- **53.** [Arquitetura orientada a eventos](book/scalability/event-driven-architecture.md)
-	- **54.** [CQRS](book/scalability/cqrs.md)
-	- **55.** [Event Sourcing](book/scalability/event-sourcing.md)
-	- **56.** [Microservices Best Practices](book/scalability/microservices-best-practices.md)
+	- **59.** [Caching Strategies](book/scalability/caching-strategies.md)
+	- **60.** [Arquitetura orientada a eventos](book/scalability/event-driven-architecture.md)
+	- **61.** [CQRS](book/scalability/cqrs.md)
+	- **62.** [Event Sourcing](book/scalability/event-sourcing.md)
+	- **63.** [Microservices Best Practices](book/scalability/microservices-best-practices.md)
 
 - **Cloud**
-	- **57.** [Cloud Native Patterns](book/cloud/cloud-native-patterns.md)
-	- **58.** [Security Best Practices](book/cloud/security-best-practices.md)
+	- **64.** [Cloud Native Patterns](book/cloud/cloud-native-patterns.md)
+	- **65.** [Security Best Practices](book/cloud/security-best-practices.md)
 
 - **Missão Crítica**
-	- **59.** [High Availability & Fault Tolerance](book/mission-critical/high-availability-fault-tolerance.md)
+	- **66.** [High Availability & Fault Tolerance](book/mission-critical/high-availability-fault-tolerance.md)
 
 - **Testes**
-	- **60.** [TDD](book/tests/tdd.md)
-	- **61.** [BDD](book/tests/bdd.md)
-	- **62.** [Unit Testing](book/tests/unit-testing.md)
+	- **67.** [TDD](book/tests/tdd.md)
+	- **68.** [BDD](book/tests/bdd.md)
+	- **69.** [Unit Testing](book/tests/unit-testing.md)
 
 - **Carreira**
-	- **63.** [System Design Interview](book/career/system-design-interview.md)
-	- **64.** [Code Review & Collaboration](book/career/code-review-collaboration.md)
+	- **70.** [System Design Interview](book/career/system-design-interview.md)
+	- **71.** [Code Review & Collaboration](book/career/code-review-collaboration.md)
 
 - **Anexos**
-	- **65.** [Template de Documentação (GitHub)](.github/DOCUMENTATION_TEMPLATE.md)
+	- **72.** [Template de Documentação (GitHub)](.github/DOCUMENTATION_TEMPLATE.md)

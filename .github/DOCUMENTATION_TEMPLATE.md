@@ -19,6 +19,65 @@ _Exemplo: A abordagem TDD, quando bem aplicada em sistemas críticos com pipelin
 
 ---
 
+## Diagramas e Intuição Visual (quando pertinente)
+
+Inclua diagramas e/ou gráficos sempre que eles ajudarem a **reduzir ambiguidade** e acelerar a compreensão.
+
+Use especialmente quando houver:
+
+- **Fluxos** (pipeline, request lifecycle, CI/CD, estados e transições)
+- **Estruturas** (componentes, camadas, dependências, árvores, grafos)
+- **Algoritmos** (passo a passo, invariantes, decisões)
+- **Trade-offs** (custo vs latência, throughput vs consistência)
+
+### Mermaid (modo compatibilidade GitHub)
+
+Para funcionar bem no GitHub, use um subconjunto mais conservador do Mermaid:
+
+- Prefira `graph` (ex.: `graph LR`, `graph TD`) em vez de sintaxes mais “novas”.
+- Escreva labels **simples e curtas**, de preferência em ASCII:
+  - Evite acentos dentro do Mermaid (use `Nao`, `Operacao`, `Padrao`).
+  - Evite parênteses `()`, ponto de interrogação `?`, barra `/`, colchetes `[]` dentro de textos.
+  - Evite `>` dentro de labels (use `maior que`).
+- Para texto na aresta, use `A -- texto --> B` (evite `A -->|texto| B`).
+
+#### Exemplo 1: Fluxo/decisao
+
+```mermaid
+graph TD
+A[Entrada] --> B{Condicao}
+B -- Sim --> C[Acao]
+B -- Nao --> D[Fallback]
+C --> E[Saida]
+D --> E
+```
+
+#### Exemplo 2: Componentes/dependencias
+
+```mermaid
+graph LR
+UI[UI] --> API[API]
+API --> SVC[Service]
+SVC --> DB[Database]
+SVC --> MQ[Queue]
+```
+
+#### Exemplo 3: Algoritmo (loop)
+
+```mermaid
+graph LR
+S[Start] --> P[Processa]
+P --> Q{Continua}
+Q -- Sim --> P
+Q -- Nao --> E[End]
+```
+
+### Dica pratica
+
+- Se um diagrama quebrar no GitHub, simplifique os textos do Mermaid (labels menores, sem caracteres especiais) antes de tentar recursos mais complexos.
+
+---
+
 ## Principais Desafios no Uso Profissional
 
 - **Escalabilidade dos Testes/Padrões**  
