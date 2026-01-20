@@ -50,32 +50,32 @@ O diferencial sênior é dominar *padrões recorrentes* que transformam problema
 ### Sliding Window (janela variável)
 
 ```mermaid
-flowchart LR
-	A[left=0, right=0] --> B[Expande: right++]
-	B --> C{Violou a regra?\n(ex.: soma >= target)}
-	C -->|Não| B
-	C -->|Sim| D[Atualiza resposta]
-	D --> E[Contrai: left++]
-	E --> C
+graph LR
+A[left=0 right=0] --> B[Expande: right++]
+B --> C{Violou a regra? (ex.: soma >= target)}
+C -- Não --> B
+C -- Sim --> D[Atualiza resposta]
+D --> E[Contrai: left++]
+E --> C
 ```
 
 ### Prefix Sum (consulta em intervalo)
 
 ```mermaid
-flowchart LR
-	A[Array a] --> B[Constrói prefix\n(p[i]=soma dos i primeiros)]
-	B --> C[Query soma(l..r)\n= p[r+1] - p[l]]
+graph LR
+A[Array a] --> B[Constrói prefix (p(i)=soma dos i primeiros)]
+B --> C[Query soma(l..r) = p(r+1) - p(l)]
 ```
 
 ### Binary Search em predicado monotônico
 
 ```mermaid
-flowchart TD
-	A[Domínio ordenado] --> B{ok(mid)?}
-	B -->|true| C[Move hi = mid]
-	B -->|false| D[Move lo = mid+1]
-	C --> B
-	D --> B
+graph TD
+A[Domínio ordenado] --> B{ok(mid)?}
+B -- true --> C[Move hi = mid]
+B -- false --> D[Move lo = mid+1]
+C --> B
+D --> B
 ```
 
 ## Algoritmos Essenciais

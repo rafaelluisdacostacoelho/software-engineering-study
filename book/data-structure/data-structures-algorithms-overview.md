@@ -56,26 +56,26 @@ A regra de ouro em produção: **otimize a estrutura do problema antes de micro-
 ### Como escolher a estrutura (atalho mental)
 
 ```mermaid
-flowchart TD
-	A[Problema] --> B{Qual padrão de acesso domina?}
-	B -->|Lookup por chave / membership| C[Hash map / Set]
-	B -->|Ordenação e top-k recorrente| D[Heap / Priority Queue]
-	B -->|Leitura sequencial e cache locality| E[Array / Slice]
-	B -->|Range query (soma/min/max)| F[Fenwick / Segment Tree / Sparse Table]
-	B -->|Prefixo/autocomplete| G[Trie / Radix]
-	B -->|Conectividade dinâmica| H[Union-Find (DSU)]
-	B -->|Caminhos e dependências| I[Grafos (BFS/DFS/Dijkstra)]
+graph TD
+A[Problema] --> B{Qual padrão de acesso domina?}
+B -- Lookup por chave / membership --> C[Hash map / Set]
+B -- Ordenação e top-k recorrente --> D[Heap / Priority Queue]
+B -- Leitura sequencial e cache locality --> E[Array / Slice]
+B -- Range query (soma min max) --> F[Fenwick, Segment Tree, Sparse Table]
+B -- Prefixo/autocomplete --> G[Trie / Radix]
+B -- Conectividade dinâmica --> H[Union-Find DSU]
+B -- Caminhos e dependências --> I[Grafos BFS DFS Dijkstra]
 ```
 
 ### Custo cresce quando $n$ cresce
 
 ```mermaid
-flowchart LR
-	S[Entrada cresce: n] --> P[Operação em hot path]
-	P --> Q{Complexidade por operação}
-	Q -->|O(1) médio / amortizado| R[Normalmente escala bem]
-	Q -->|O(n)| T[Pode virar gargalo]
-	Q -->|O(n^2)| U[Quase sempre explode em produção]
+graph LR
+S[Entrada cresce: n] --> P[Operação em hot path]
+P --> Q{Complexidade por operação}
+Q -- O(1) médio/amortizado --> R[Normalmente escala bem]
+Q -- O(n) --> T[Pode virar gargalo]
+Q -- O(n^2) --> U[Quase sempre explode em produção]
 ```
 
 ## Principais Desafios no Uso Profissional

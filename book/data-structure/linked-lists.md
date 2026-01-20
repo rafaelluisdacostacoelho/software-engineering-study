@@ -31,26 +31,28 @@ Listas encadeadas aparecem menos em código de aplicação moderno (por causa de
 ### Estrutura de nós (singly vs doubly)
 
 ```mermaid
-flowchart LR
-	H[head] --> A((A)) --> B((B)) --> C((C)) --> N[null]
+graph LR
+H[head] --> A((A)) --> B((B)) --> C((C)) --> N[null]
 ```
 
 ```mermaid
-flowchart LR
-	H2[head] --> A2((A))
-	A2 <--> B2((B))
-	B2 <--> C2((C))
-	C2 --> T2[tail]
+graph LR
+H2[head] --> A2((A))
+A2 --> B2((B))
+B2 --> A2
+B2 --> C2((C))
+C2 --> B2
+C2 --> T2[tail]
 ```
 
 ### Reversão (ideia)
 
 ```mermaid
-flowchart LR
-	A((A)) --> B((B)) --> C((C)) --> N[null]
-	A -.->|vira| P[null]
-	B -.->|vira| A
-	C -.->|vira| B
+graph LR
+A((A)) --> B((B)) --> C((C)) --> N[null]
+A -.->|vira| P[null]
+B -.->|vira| A
+C -.->|vira| B
 ```
 
 ## Principais Desafios no Uso Profissional

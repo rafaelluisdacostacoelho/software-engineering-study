@@ -32,28 +32,28 @@ Pilhas e filas aparecem em:
 ### Stack (LIFO)
 
 ```mermaid
-flowchart TB
-	T[topo] --> A[push 3]
-	A --> B[push 7]
-	B --> C[pop -> 7]
+graph TB
+T[topo] --> A[push 3]
+A --> B[push 7]
+B --> C[pop retorna 7]
 ```
 
 ### Queue (FIFO)
 
 ```mermaid
-flowchart LR
-	A[enqueue 1] --> B[enqueue 2] --> C[dequeue -> 1]
+graph LR
+A[enqueue 1] --> B[enqueue 2] --> C[dequeue retorna 1]
 ```
 
 ### Monotonic Stack (próximo maior)
 
 ```mermaid
-flowchart LR
-	I[Percorre da esquerda p/ direita] --> S[Stack guarda índices\ncom valores em ordem decrescente]
-	S --> P{Novo valor > topo?}
-	P -->|Sim| R[Pop e resolve resposta]
-	P -->|Não| K[Push índice]
-	R --> P
+graph LR
+I[Percorre da esquerda p/ direita] --> S[Stack guarda índices (valores em ordem decrescente)]
+S --> P{Novo valor > topo?}
+P -- Sim --> R[Pop e resolve resposta]
+P -- Não --> K[Push índice]
+R --> P
 ```
 
 ## Algoritmos Essenciais
