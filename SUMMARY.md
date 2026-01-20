@@ -112,5 +112,13 @@
 	- **82.** [System Design Interview](book/career/system-design-interview.md)
 	- **83.** [Code Review & Collaboration](book/career/code-review-collaboration.md)
 
+- **Tecnologias**
+	- **84.** [Docker](book/technologies/docker.md)
+	- **85.** [Kubernetes](book/technologies/kubernetes.md)
+	- **86.** [Terraform](book/technologies/terraform.md)
+	- **87.** [Ansible](book/technologies/ansible.md)
+	- **88.** [C#](book/technologies/csharp.md)
+	- **89.** [Golang](book/technologies/golang.md)
+
 - **Anexos**
-	- **84.** [Template de Documentação (GitHub)](.github/DOCUMENTATION_TEMPLATE.md)
+	- **90.** [Template de Documentação (GitHub)](.github/DOCUMENTATION_TEMPLATE.md)
