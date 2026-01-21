@@ -1,4 +1,4 @@
-[Anterior](../archtecture/onion-architecture.md) | [Índice](../../SUMMARY.md) | [Próximo](../design-patterns/adapter.md)
+[Anterior](../archtecture/technical-leadership-for-architects.md) | [Índice](../../SUMMARY.md) | [Próximo](../design-patterns/adapter.md)
 
 # Domain-Driven Design (DDD) — Guia Avançado para Desenvolvedores Experientes
 

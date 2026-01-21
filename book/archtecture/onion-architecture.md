@@ -1,4 +1,4 @@
-[Anterior](hexagonal-architecture.md) | [Índice](../../SUMMARY.md) | [Próximo](../domain/ddd.md)
+[Anterior](hexagonal-architecture.md) | [Índice](../../SUMMARY.md) | [Próximo](clean-architecture.md)
 
 # Onion Architecture — Arquitetura em Cebola (nível Sênior / Especialista)
 
