@@ -2,6 +2,100 @@
 
 # Arquitetura Hexagonal (Ports & Adapters)
 
+## Objetivos de Aprendizado (para quem está começando)
+
+Ao final deste capítulo, você deve conseguir:
+
+- Explicar, com suas palavras, o que é “core do sistema” e o que é “mundo externo”.
+- Identificar no código quais partes são **portas (ports)** e quais são **adaptadores (adapters)**.
+- Organizar um projeto simples sem misturar regra de negócio com HTTP, banco e SDKs.
+- Escrever testes rápidos para regra de negócio sem precisar subir banco, fila ou servidor.
+
+---
+
+## Contexto, Escopo e Quando Usar
+
+### Quando usar (sinais práticos)
+
+- Você tem **regras de negócio** que mudam com frequência (não é só CRUD).
+- Você integra com **múltiplas dependências externas**: banco, APIs, filas, cache, provedores.
+- Você quer **testes rápidos** e confiáveis (sem depender de infra).
+- Você sabe que pode precisar trocar detalhes (ex.: trocar Stripe por outro provedor).
+
+### Quando não usar (para não criar complexidade à toa)
+
+- Script pequeno, automação pontual, protótipo de poucos dias.
+- CRUD simples com pouca regra e baixo risco.
+- Time muito pequeno sem necessidade de múltiplas integrações.
+
+---
+
+## Glossário (o mínimo para conversar bem)
+
+| Termo | O que é | Como aparece na prática |
+|------|---------|--------------------------|
+| Core | Regras e casos de uso do sistema | Funções/classes que decidem o que pode/não pode |
+| Port (porta) | Um contrato que o core define | Interface `PaymentsPort`, `OrdersRepository` |
+| Adapter | Implementação do contrato para um detalhe | `StripePaymentsAdapter`, `PostgresOrdersRepo` |
+| Inbound (entrada) | Tudo que chama o core | HTTP controller, consumer de fila, CLI |
+| Outbound (saída) | Tudo que o core chama | Banco, mensageria, APIs externas |
+| Composition Root | Onde as dependências são montadas | `main`, startup, DI container |
+
+---
+
+## Modelo Mental (analogia para leigo)
+
+Pense no sistema como um **restaurante**:
+
+- O **core** é a cozinha: as receitas (regras) e o preparo (casos de uso).
+- As **portas** são os “pedidos” e “saídas” que a cozinha entende (ex.: “fazer pedido”, “cobrar pagamento”, “salvar pedido”).
+- Os **adaptadores** são os “garçons” e “entregadores”: um garçom atende no salão (HTTP), outro atende delivery (fila/evento). No fim, ambos entregam pedidos para a mesma cozinha.
+
+O objetivo é que a cozinha funcione mesmo se você trocar:
+
+- o app de delivery (adaptador)
+- o tipo de caixa/pagamento (adaptador)
+- o fornecedor (adaptador)
+
+Sem reescrever receitas.
+
+---
+
+## Diagrama (como as peças se conectam)
+
+```mermaid
+graph TD
+	HTTP["HTTP Controller"] --> UC["Use Case (Core)"]
+	CLI["CLI/Job"] --> UC
+	CONSUMER["Queue Consumer"] --> UC
+
+	UC --> P1["Port: OrdersRepository"]
+	UC --> P2["Port: PaymentsGateway"]
+
+	P1 --> DB[("Adapter: Postgres")]
+	P2 --> PAY["Adapter: Payment Provider"]
+```
+
+Leitura do diagrama:
+
+- Vários **canais de entrada** chamam o mesmo caso de uso.
+- O caso de uso só conhece **ports**.
+- Os detalhes (DB, SDK) ficam nos **adapters**.
+
+---
+
+## Passo a Passo (aplicando no mundo real)
+
+1. Liste os **casos de uso** (verbos): “criar pedido”, “pagar pedido”, “cancelar”.
+2. Para cada caso de uso, liste os **efeitos** que ele precisa produzir:
+	 - persistir algo?
+	 - chamar API externa?
+	 - publicar evento?
+3. Transforme cada efeito em uma **porta** (contrato) definida no core.
+4. Implemente adaptadores de infra (DB, HTTP, SDKs) que atendem essas portas.
+5. Monte tudo no **composition root** (ponto único de wiring).
+6. Teste o core com fakes e spies antes de testar infraestrutura.
+
 ## Visão Geral e Contexto de Mercado
 
 Arquitetura Hexagonal (Ports & Adapters) é um estilo arquitetural que coloca o **domínio e os casos de uso** no centro e trata “o mundo externo” (HTTP, banco, mensageria, cache, SDKs de terceiros) como **adaptadores substituíveis**. Em times profissionais, ela aparece como uma resposta pragmática a dois problemas recorrentes:
@@ -69,6 +163,27 @@ Na prática, a promessa é reduzir o **custo de mudança**: você evolui regras,
   - E2E: poucos, cobrindo fluxos críticos.
 
 ---
+
+## Exemplo Guiado (do zero, sem framework)
+
+Vamos modelar um fluxo simples: **pagar um pedido**.
+
+1) O core precisa de duas coisas externas:
+
+- Buscar o pedido (port de repositório)
+- Cobrar o pagamento (port de gateway)
+
+2) O caso de uso decide e valida:
+
+- “Se o total é 0, não paga.”
+- “Se o pedido não existe, falha.”
+
+3) A infraestrutura só traduz:
+
+- HTTP → chama `PayOrderUseCase.execute()`
+- Postgres/Stripe → implementam ports
+
+Resultado: você consegue testar o caso de uso inteiro em memória.
 
 ## Exemplos Avançados (Python, C# e Go)
 
@@ -262,6 +377,19 @@ Tudo que é volátil e externo ao domínio: persistência, mensageria, gateways,
 
 - OpenTelemetry (instrumentação de entrada/saída)
 - Pact (contract testing)
+
+---
+
+## Exercícios (para fixar)
+
+1) Pegue um CRUD que você já tem e responda:
+
+- Quais são os 3 casos de uso principais (verbos)?
+- Quais dependências externas aparecem dentro das regras?
+
+2) Crie uma porta `Clock` (relógio) e remova usos diretos de “hora atual” do core.
+
+3) Escreva um teste de caso de uso usando um fake de repositório e um spy de gateway.
 
 ---
 

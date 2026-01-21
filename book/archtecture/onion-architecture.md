@@ -2,6 +2,88 @@
 
 # Onion Architecture — Arquitetura em Cebola (nível Sênior / Especialista)
 
+## Objetivos de Aprendizado (para leigos e iniciantes)
+
+Ao terminar este capítulo, você consegue:
+
+- Explicar a Onion em uma frase: “o negócio não depende de detalhes externos”.
+- Identificar o que é **domínio**, o que é **caso de uso**, e o que é **infra**.
+- Separar “regras” (core) de “conectores” (HTTP/DB/mensageria).
+- Montar um projeto com camadas sem virar “pasta por pasta sem propósito”.
+
+---
+
+## Modelo Mental (a cebola)
+
+Imagine uma cebola com anéis. O centro é o que mais importa (as regras do negócio). Quanto mais você vai para fora, mais aparecem detalhes “trocáveis” (framework web, banco, SDKs).
+
+- **Anéis internos**: regras e decisões do negócio.
+- **Anéis externos**: detalhes de tecnologia e integração.
+- **Regra de ouro**: dependências apontam para dentro (o centro não “importa” o mundo).
+
+---
+
+## Glossário Essencial
+
+| Termo | Significa | Exemplo |
+|---|---|---|
+| Domínio (Domain) | Regras e invariantes do negócio | “E-mail deve ser único” |
+| Caso de uso (Use case) | Fluxo de negócio orquestrado | “Cadastrar cliente” |
+| Porta (Port) | Contrato que o core precisa | `CustomersRepository` |
+| Adaptador (Adapter) | Implementação de uma porta | Repo SQL, client HTTP |
+| Inbound | Entrada no sistema | Controller HTTP, consumer |
+| Outbound | Saída para fora | DB, fila, API externa |
+| Composition Root | Lugar onde “liga os fios” | `main`, DI container |
+
+---
+
+## Diagrama Rápido
+
+O diagrama abaixo é intencionalmente simples: ele serve para você “ver” quem depende de quem.
+
+```mermaid
+graph TB
+	Domain["Domain / Entities"]
+	App["Application / Use Cases"]
+	Inbound["Inbound Adapters (HTTP / CLI / Consumers)"]
+	Outbound["Outbound Adapters (DB / Broker / APIs)"]
+
+	Inbound --> App
+	Domain --> App
+	App -- "porta (interface)" --> Outbound
+```
+
+Leitura correta:
+
+- Inbound chama casos de uso.
+- Casos de uso falam com o “mundo externo” por **portas**.
+- Infra implementa as portas e fica “do lado de fora”.
+
+---
+
+## Como Aplicar (passo a passo)
+
+1. Liste os **casos de uso** (verbos do negócio): cadastrar, pagar, cancelar, reconciliar.
+2. Para cada caso de uso, separe:
+	 - Regras/invariantes (core)
+	 - Efeitos/IO (DB, HTTP, publish de evento)
+3. Crie **portas** no core para o que for IO.
+4. Implemente **adaptadores** de fora para dentro (infra implementa a porta).
+5. Tenha um **composition root** que conecta as dependências.
+6. Garanta com testes e/ou regras de import que o core não puxa infra.
+
+---
+
+## Exemplo Guiado (o que você já viu nos códigos)
+
+Quando você olha para o caso de uso `RegisterCustomer` (nos exemplos abaixo), a ideia é:
+
+- O caso de uso recebe um **repositório por interface** (`CustomersRepository`).
+- A regra “e-mail válido” e “e-mail único” fica no core.
+- O repositório real (SQL, Mongo, Redis) fica **fora** e só é “plugado” no composition root.
+
+Se você consegue trocar `InMemoryRepo` por “PostgresRepo” sem mexer no caso de uso, você está aplicando a Onion.
+
 ## Visão Geral e Contexto de Mercado
 
 Onion Architecture (Arquitetura em Cebola) é um estilo arquitetural focado na **regra de dependência**: o centro (domínio) não depende de detalhes externos. Ela é muito aplicada em sistemas onde o negócio é a parte mais valiosa (fintech, logística, saúde, seguros) e onde integrações (banco de dados, mensageria, APIs externas) mudam com frequência.
@@ -274,4 +356,4 @@ Crie regras (ex.: testes de arquitetura) que falham se `domain` importar `infras
 
 ---
 
-[Anterior](hexagonal-architecture.md) | [Índice](../../SUMMARY.md) | [Próximo](../domain/ddd.md)
+[Anterior](hexagonal-architecture.md) | [Índice](../../SUMMARY.md) | [Próximo](clean-architecture.md)

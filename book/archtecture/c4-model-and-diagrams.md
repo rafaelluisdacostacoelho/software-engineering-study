@@ -49,10 +49,10 @@ O ganho de carreira aqui é direto: quem consegue **desenhar o sistema com clare
 
 ```mermaid
 graph LR
-User[User] --> API[API]
-API --> SVC[Service]
-SVC --> DB[(Database)]
-SVC --> MQ[(Queue)]
+  User["User"] --> API["API"]
+  API --> SVC["Service"]
+  SVC --> DB[("Database")]
+  SVC --> MQ[("Queue")]
 ```
 
 ---
